@@ -19,3 +19,5 @@ source:
 frontend:
 - any: ['src/**/*.js']
   all: ['!src/main.js']
+
+# This will be a bew label if I can figure out how to get it to work!
