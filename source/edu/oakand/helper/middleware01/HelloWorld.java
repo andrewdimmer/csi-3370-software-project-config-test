@@ -1,4 +1,4 @@
-package edu.oakland.helper.middleware_01;
+package edu.oakland.helper.middleware01;
 
 public class HelloWorld {
 
