@@ -12,6 +12,8 @@ Below, we'll go over the steps that you need to do to write and save code to Git
 
 ## How do I write new code?
 
+Prerequsites: Make sure you are on the `main` branch of the repository, then right before starting this process be sure you "Pull" the `main` branch to get any new updates!
+
 1. Create a new branch from your preferred git client. This basically creating a new copy of the code that is yours to use. This means that if anyone else changes code, it won't break what your making while you're still writing your code. (Note: it may still break your code later, but we'll fix this later on).
 
 2. Open the code repository in your preferred development environment (i.e. JEdit for this class).
@@ -122,7 +124,7 @@ Last but not least, it a way to document what is in progress and what the status
 
 You've now published your PR! You can either keep coding if you're still working on your task(s) that you need to do before you can merge, or [Request "Code Reviews (CRs)"](#how-do-i-request-code-reviews-crs).
 
-Note, if you want to come back to your pull request and edit it later, or even just check back on its status, you can do so by completing steps 1 and 2 above, then selecting your pull request from the list. You can [use filters (TODO)](#using-filters) to help find your PR in the list.
+Note, if you want to come back to your pull request and edit it later, or even just check back on its status, you can do so by completing steps 1 and 2 above, then selecting your pull request from the list. You can [use filters](Issues.md#im-trying-to-find-an-issue-or-pr-how-can-i-filter-and-search-for-it) to help find your PR in the list.
 
 ## How do I check my code is ready to "Merge"?
 
@@ -184,7 +186,9 @@ Once all of your CRs are in the approval state, and all your checks pass, from y
 
 3. Click the green "Confirm squash and merge".
 
-There you go! You're codes now in production! If you were working off of a subtask for an issue, you can now [check that off (TODO)](#tasks)! If you were fixing a bug, the issue should have automatically closed when the PR was merged because we linked the issue to the PR!
+There you go! You're codes now in production! If you were working off of a subtask for an issue, you can now [check that off](Issues.md#im-working-on-a-sprint-task-how-do-i-track-it)! If you were fixing a bug, the issue should have automatically closed when the PR was merged because we linked the issue to the PR!
+
+Finally, be sure to switch back to the `main` branch again before starting this process again!
 
 ## What's next?
 
