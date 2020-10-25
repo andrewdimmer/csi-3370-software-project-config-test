@@ -41,7 +41,7 @@ For this project as well, it might also be worth checking some of the PR content
 
 2. Click on the "Pull requests" tab in the **menu bar directly below the repository name (black text on a grey background)**! DO NOT click the "Pull requests" tab in the top menu bar (grey text on a black background); this is for all of the pull requests that you have open in all repos, we just need the PRs for this repo.
 
-3. Select the PR you want to add a CR to from the list. Note: you can [use filters (TODO)](#using-filters) to help find the PR you're looking for in the list.
+3. Select the PR you want to add a CR to from the list. Note: you can [use filters](Issues.md#im-trying-to-find-an-issue-or-pr-how-can-i-filter-and-search-for-it) to help find the PR you're looking for in the list.
 
 4. If you are marked as a reviewer, then there is usually a yellow banner above the PR title that says "This pull request is waiting on your review." If that bar is there, you can click on the green "Add your review" button, and it will take you directly to the "Files changed" page. If you are not a reviewer, you can still add a review by clicking on the "Files changed" tab directly below the PR title. Note: If the PR is still in a draft status (the oval below the title is grey and says "Draft" instead of being green and saying "Open"), you can still add a review (they system doesn't stop you), but just know the changes are not final yet and are likely still under development.
 
