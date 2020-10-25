@@ -6,9 +6,9 @@ We briefly mentioned issues when talking about [Writing Code and Pull Requests (
 
 ## What are "Issues"?
 
-At their simplist, they are simply a "post" (for lack of a better word) on a GitHub repository. In terms of what they are physically, they are a block of text that we can reply to in comments, add labels to, and mark them open or closed. Unlike PRs and CRs, Issues don't directly relate to any code that we've written (unless someone copies and pastes in a code snipet to a comment or the description).
+At their simplest, they are simply a "post" (for lack of a better word) on a GitHub repository. In terms of what they are physically, they are a block of text that we can reply to in comments, add labels to, and mark them open or closed. Unlike PRs and CRs, Issues don't directly relate to any code that we've written (unless someone copies and pastes in a code snippet to a comment or the description).
 
-Where issues become powerful though is we can use them as a centralizing "thread" for all the work that is going on regarding a certain topic. In large, open source repositories, they can host anything and everything to do with a project, from a feature roadmap, to a deprecation notice and sunset plan, to support tickets.
+Where issues become powerful though is in the fact we can use them as a centralizing "thread" for all the work that is going on regarding a certain topic. In large, open source repositories, they can host anything and everything to do with a project, from a feature roadmap, to a deprecation notice and sunset plan, to support tickets.
 
 What they're most known for (and what we'll use them for), however, is being able to have end users report bugs and make feature requests, then automatically update interested users when a developer starts working on a resolution for the issue. Remember when we mentioned that PRs should have a description containing "Working on #X..." where X was the issue number of the sprint story? By doing so, it means that any time a developer creates a PR and links the issue like that, or pushes a commit with the issue number, GitHub tracks it to the issue thread so you can see all of those as a timeline at once.
 
@@ -48,7 +48,7 @@ That said, there are four main use cases for how we'll be using issues (and one 
 
 You've now submitted an issue to that team! It's now up to them to assign it out and prioritize it with their other work. When in doubt, feel free to conversations about the issue in the issue comments.
 
-Note: this is great to not only report issues for other teams, but also self-report issues. Found a bug in code that someone else wrote? Create an issue for it, then just add them as the assignee and let them know. The issue will do the rest of the tracking for you regarding progess.
+Note: this is great to not only report issues for other teams, but also self-report issues. Found a bug in code that someone else wrote? Create an issue for it, then just add them as the assignee and let them know. The issue will do the rest of the tracking for you regarding progress.
 
 ## "I'm fixing a bug or missing documentation. How do I track my progress?"
 
@@ -99,10 +99,12 @@ Finally, once you are done with your task, check the box saying it is done in th
 - From the "Filters" dropdown: "Your pull requests" --> All open pull requests that you created
 - From the "Filters" dropdown: "Everything assigned to you" --> All open issues and pull request where you are an assignee (this would be your team's issues and your personal PRs for the most part)
 - From the "Filters" dropdown: "Everything mentioning you" --> All open issues and pull request for all users in the repo where you are included as an assignee, code reviewer, commenter, etc.
-- From the "Label" dropdown: You can select you're team's label to see all open issues or pull requests belonging to your team
-- From the "Milestones" dropdown: You can filter by task due date (so only show me ones due next sprint)
-- From the "Reviers" dropdown: You can select all open pull requests where you are a reviewer
+- From the "Label" dropdown: You can select your team's label to see all open issues or pull requests belonging to your team
+- From the "Milestones" dropdown: You can filter by task due date (so only show me those due next sprint)
+- From the "Reviewers" dropdown: You can select all open pull requests where you are a reviewer
 - From the search bar next to the "Filters" dropdown: You can flat out search for an issue or pull request
+
+You can also use the "Open" and "Closed" toggle to switch between viewing open and closed issues and pull requests.
 
 ## What's next?
 
