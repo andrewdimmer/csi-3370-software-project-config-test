@@ -12,6 +12,6 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         reporter: 'github-pr-review'
-        checkstyle_config: 'google_checks.xml'
+        checkstyle_config: 'sun_checks.xml'
         fail_on_error: true
         tool_name: 'checkstyles'
