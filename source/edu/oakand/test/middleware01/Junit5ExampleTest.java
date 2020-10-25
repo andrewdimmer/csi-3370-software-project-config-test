@@ -1,7 +1,7 @@
 package edu.oakland.test.middleware01;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 @DisplayName("JUnit 5 Example")
 public class Junit5ExampleTest {
