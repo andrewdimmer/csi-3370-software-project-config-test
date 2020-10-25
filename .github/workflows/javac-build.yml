@@ -52,6 +52,9 @@ jobs:
           unzip junit-jupiter-params-5.6.2.jar -d junit-jupiter-params-5.6.2;
         # Note, we get the JARs file from getting the link from the public Maven website, then build the file structure.
       - name: Verify that all Java code compiles
-        run: ls -R -la; echo; javac -d bin -sourcepath source -classpath junit-5.6.2/console/junit-platform-console-standalone-1.6.2.jar:junit-5.6.2/console/junit-platform-console-standalone-1.6.2:junit-5.6.2/jupiter/junit-jupiter-5.6.2.jar:junit-5.6.2/jupiter/junit-jupiter-api-5.6.2.jar:junit-5.6.2/jupiter/junit-jupiter-engine-5.6.2.jar:junit-5.6.2/jupiter/junit-jupiter-migrationsupport-5.6.2.jar:junit-5.6.2/jupiter/junit-jupiter-params-5.6.2.jar:junit-5.6.2/jupiter/junit-jupiter-api-5.6.2:junit-5.6.2/jupiter/junit-jupiter-params-5.6.2 $(find -name *.java)
+        run:
+          ls -la junit-5.6.2/console/junit-platform-console-standalone-1.6.2.jar;
+          echo;
+          javac -d bin -sourcepath source -classpath junit-5.6.2/console/junit-platform-console-standalone-1.6.2.jar $(find -name *.java)
         # Note this uses command substitution and the find command
         # from CSI 3660 Systems Admin I
