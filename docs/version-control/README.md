@@ -27,3 +27,5 @@ Click the links below to go to the documentation on each of the different tasks 
 2. [Code Reviews (CRs)](CodeReviews.md)
 
 3. [Issues: Bug Reports and Feature Requests](Issues.md)
+
+4. [GitHub Projects: The Sprint Task Status Board](GitHubProjects.md)
