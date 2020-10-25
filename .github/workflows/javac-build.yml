@@ -29,8 +29,8 @@ jobs:
         run: sudo apt install wget
       - name: Install junit-console-standalone-1.6.2
         run:
-          wget https://search.maven.org/remotecontent?filepath=org/junit/platform/junit-platform-console-standalone/1.6.2/junit-platform-console-standalone-1.6.2.jar,
-          mv 'remotecontent?filepath=org%2Fjunit%2Fplatform%2Fjunit-platform-console-standalone%2F1.6.2%2Fjunit-platform-console-standalone-1.6.2.jar' junit-platform-console-standalone-1.6.2.jar,
+          wget https://search.maven.org/remotecontent?filepath=org/junit/platform/junit-platform-console-standalone/1.6.2/junit-platform-console-standalone-1.6.2.jar;
+          mv 'remotecontent?filepath=org%2Fjunit%2Fplatform%2Fjunit-platform-console-standalone%2F1.6.2%2Fjunit-platform-console-standalone-1.6.2.jar' junit-platform-console-standalone-1.6.2.jar;
           unzip junit-platform-console-standalone-1.6.2.jar -d junit-platform-console-standalone-1.6.2
         # Note, we get the JAR file from getting the link from the public Maven website, then extract it.
       - name: Verify that all Java code compiles
