@@ -160,7 +160,7 @@ That's totally fine, and happens all the time in industry. If they request chang
 
 If you do have changes requested, the reviewer should have left you either global comments or comments on specific parts of your code that you need to take another look at. Once you fix those changes, and push the code up, just let your reviewers know and they'll give it another look.
 
-Want extra tips to make resolving requested changes even easier? Take a look at the ["Help! Changes were requested on my PR! What do I do?"](#help-changes-were-requested-on-my-pr-what do-i-do) section of the Code Reviews documentation.
+Want extra tips to make resolving requested changes even easier? Take a look at the ["Help! Changes were requested on my PR! What do I do?"](CodeReviews.md#help-changes-were-requested-on-my-pr-what-do-i-do) section of the Code Reviews documentation.
 
 ### How do I request "Code Reviews (CRs)"?
 
