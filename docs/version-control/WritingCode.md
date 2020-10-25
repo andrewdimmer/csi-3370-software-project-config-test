@@ -1,4 +1,4 @@
-# Version Control Documentation - Writing Code
+# Version Control Documentation - Writing Code and Pull Requests (PRs)
 
 [<-- Return to Version Control Documentation Hub](README.md)
 
@@ -130,7 +130,7 @@ As mentioned earlier, you need to get "Code Reviews (CRs)" and pass all the "Che
 
 ### What are "Checks"?
 
-"Checks" are automated workflows that GitHub runs to validate that your PR is in good shape to merge. The main one will be a build test via Gradle: if the code builds and passes unit tests, the check approves the PR; otherwise, it rejects it.
+"Checks" are automated workflows that GitHub runs to validate that your PR is in good shape to merge. The main one will be a build test via Gradle: if the code builds and passes unit tests, the check approves the PR; otherwise, it blocks it from being merged.
 
 ### What do I do if a "Check" failed?
 
@@ -144,7 +144,7 @@ From your PR:
 
 ### What are "Code Reviews (CRs)"?
 
-They are exactly what the name says: someone goes through and reviews the code that you've written in a PR, and either Approves, Comments on, or Rejects it.
+They are exactly what the name says: someone goes through and reviews the code that you've written in a PR, and either Approves, Comments on, or Requests changes.
 
 During the code review, reviewer look to make sure that everything looks correct syntactically, that the code follows the style guide, and there aren't any bugs in it that they can see.
 
@@ -152,13 +152,15 @@ During the code review, reviewer look to make sure that everything looks correct
 
 You need at least to CR approvals before you can "Merge" your code. These are intended to be your programming partner and either your Team SCRUM Master or Team Assistant SCRUM Master.
 
-Note: by default, GitHub should automatically add both your Team SCRUM Master and Team Assistant SCRUM Master as reviewers when you publish your PR. You'll only need one of their approvals to merge, but if one of them rejects the change, then you must gain their approval to merge.
+Note: by default, GitHub should automatically add both your Team SCRUM Master and Team Assistant SCRUM Master as reviewers when you publish your PR. You'll only need one of their approvals to merge, but if one of them requests changes, then you must gain their approval to merge.
 
-### What happens if one of my reviews rejects my PR?
+### What happens if one of my reviewers requests changes?
 
-That's totally fine, and happens all the time in industry. If they reject your PR, it just means you need to make some changes then they will review it again.
+That's totally fine, and happens all the time in industry. If they request changes, it just means you need to make some changes then they will review it again.
 
-If you do have a PR get rejected, the reviewer should have left you either global comments or comments on specific parts of your code that you need to take another look at. Once you fix those changes, and push the code up, just let your reviewers know and they'll give it another look.
+If you do have changes requested, the reviewer should have left you either global comments or comments on specific parts of your code that you need to take another look at. Once you fix those changes, and push the code up, just let your reviewers know and they'll give it another look.
+
+Want extra tips to make resolving requested changes even easier? Take a look at the ["Help! Changes were requested on my PR! What do I do?"](CodeReviews.md#help-changes-were-requested-on-my-pr-what-do-i-do) section of the Code Reviews documentation.
 
 ### How do I request "Code Reviews (CRs)"?
 
