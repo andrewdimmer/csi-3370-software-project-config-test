@@ -22,7 +22,7 @@ jobs:
       - name: Install openjdk-11.0.8 (x64)
         uses: actions/setup-java@v1
         with:
-          java-version: 1.8 # The JDK version to make available on the path.
+          java-version: 11.0.8 # The JDK version to make available on the path.
           java-package: jdk # (jre, jdk, or jdk+fx) - defaults to jdk
           architecture: x64 # (x64 or x86) - defaults to x64
       - name: Install wget
@@ -52,9 +52,6 @@ jobs:
           unzip junit-jupiter-params-5.6.2.jar -d junit-jupiter-params-5.6.2;
         # Note, we get the JARs file from getting the link from the public Maven website, then build the file structure.
       - name: Verify that all Java code compiles
-        run:
-          ls -la junit-5.6.2/console/junit-platform-console-standalone-1.6.2.jar;
-          echo;
-          javac -d bin -sourcepath source -classpath junit-5.6.2/console/junit-platform-console-standalone-1.6.2.jar $(find -name *.java)
+        run: javac -d bin -sourcepath source -classpath junit-5.6.2/console/junit-platform-console-standalone-1.6.2.jar $(find -name *.java)
         # Note this uses command substitution and the find command
         # from CSI 3660 Systems Admin I
