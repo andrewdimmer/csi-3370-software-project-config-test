@@ -20,7 +20,7 @@ That said, there are four main use cases for how we'll be using issues (and one 
 
 2. ["I'm fixing a bug or missing documentation. How do I track my progress?"](#im-fixing-a-bug-or-missing-documentation-how-do-i-track-my-progress)
 
-3. ["I need to add a Product Backlog Item (PBI) to the SPSB. How do I do this?"]("i-need-to-add-a-product-backlog-item-pbi-to-the-spsb-how-do-I-do-this)
+3. ["I need to add a Product Backlog Item (PBI) to the SPSB. How do I do this?"](#i-need-to-add-a-product-backlog-item-pbi-to-the-spsb-how-do-i-do-this)
 
 4. ["I'm working on a sprint task. How do I track it?"](#im-working-on-a-sprint-task-how-do-i-track-it)
 
