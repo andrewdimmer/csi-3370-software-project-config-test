@@ -1,3 +1,5 @@
+package edu.oakland.test.middleware01;
+
 import org.junit.jupiter.api;
 
 @DisplayName("JUnit 5 Example")
