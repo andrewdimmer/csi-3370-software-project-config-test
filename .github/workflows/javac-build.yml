@@ -34,9 +34,6 @@ jobs:
           unzip junit-platform-console-standalone-1.6.2.jar -d junit-platform-console-standalone-1.6.2
         # Note, we get the JAR file from getting the link from the public Maven website, then extract it.
       - name: Verify that all Java code compiles
-        run: 
-          ls,
-          echo,
-          javac -d bin -sourcepath source -classpath junit-platform-console-standalone-1.6.2.jar $(find -name *.java)
+        run: javac -d bin -sourcepath source -classpath junit-platform-console-standalone-1.6.2.jar $(find -name *.java)
         # Note this uses command substitution and the find command
         # from CSI 3660 Systems Admin I
