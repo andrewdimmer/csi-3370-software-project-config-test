@@ -3,7 +3,7 @@ package edu.oakland.test.middleware01;
 import org.junit.jupiter.api;
 
 @DisplayName("JUnit 5 Example")
-class Junit5ExampleTest {
+public class Junit5ExampleTest {
 
   @BeforeAll
   static void beforeAll() {
