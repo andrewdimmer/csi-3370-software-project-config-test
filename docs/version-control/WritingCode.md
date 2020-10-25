@@ -8,23 +8,23 @@ Below, we'll go over the steps that you need to do to write and save code to Git
 
 1. To download the code to your computer, you must first install a git client. In most cases, if you are new to GitHub and Git, it's easiest to start with [GitHub Desktop](https://desktop.github.com/). You can also use the git CLI (Mac and Linux), git bash (windows), or [GitKraken](https://www.gitkraken.com/) (for more advanced GUI features).
 
-2. "Clone" this repository from your prefered git client to whatever directory you are going to work out of.
+2. "Clone" this repository from your preferred git client to whatever directory you are going to work out of.
 
 ## How do I write new code?
 
-1. Create a new branch from your prefered git client. This basically creating a new copy of the code that is yours to use. This means that if anyone else changes code, it won't break what your making while you're still writing your code. (Note: it may still break your code later, but we'll fix this later on).
+1. Create a new branch from your preferred git client. This basically creating a new copy of the code that is yours to use. This means that if anyone else changes code, it won't break what your making while you're still writing your code. (Note: it may still break your code later, but we'll fix this later on).
 
 2. Open the code repository in your preferred development environment (i.e. JEdit for this class).
 
-3. Make your code changes, and save any file's you've changed when your done.
+3. Make your code changes, and save any file's you've changed when you're done.
 
 4. "Pull" the branch of the code repository via your preferred git client. This checks if there are any files that have been updated on the branch since you last got the source code. If you know that you are the only person who is working on the branch, you can technically skip this step, but it's still recommended just in case. If both you and your partner for the programming pairs are both writing code back and forth, this is required (or you'll get error later on; we can fix it, but it's more difficult).
 
-5. "Stage" the files that you want to upload to GitHub in your preferred git client. This basically tells Git that you're going to save these files soon (think of it like opening the Save As menu on something like a Word document for a whole bunch of files at once). Note that you can change files but NOT save them to GitHub if your just making something like a temporary change to a variable in another class to test your own.
+5. "Stage" the files that you want to upload to GitHub in your preferred git client. This basically tells Git that you're going to save these files soon (think of it like opening the Save As menu on something like a Word document for a whole bunch of files at once). Note that you can change files but NOT save them to GitHub if you're just making something like a temporary change to a variable in another class to test your own.
 
 6. "Commit" your changes to the "Git Tree" (i.e. the version history of something like a Google Doc) via your preferred git client. In our example of the Word documents above, this is when you actually click the save button. Be sure to give it a descriptive commit title, and a description if required! Note that only you and your teammates will see these commits, so there is no "required" naming convention, but I would recommend [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/) if you're team wants to use a naming convention. This makes tracking what was changed when for code reviews (to be explained later) and when looking back at the repository history much easier!
 
-7. "Push" your new commit(s) to GitHub via your preferred git client. This is the equilelent of uploading your newly changed code (or Word document in our running example) to the server. Before you "Push" the changes are saved, but ONLY exist on your local machine. It's best practice to "Push" after EVERY commit, although if you forget you can just multiple at once later without an error.
+7. "Push" your new commit(s) to GitHub via your preferred git client. This is the equivalent of uploading your newly changed code (or Word document in our running example) to the server. Before you "Push" the changes are saved, but ONLY exist on your local machine. It's best practice to "Push" after EVERY commit, although if you forget you can just multiple at once later without an error.
 
 8. [RECOMMENDED]: [Create a "Pull Request (PR)" via GitHub.com](#how-do-i-create-a-pull-request-pr). Note that while this is technically not required YET, by creating a "Pull Request" now, it automatically adds that your task is "In Progress" on the STSB. This allows you automatically keep your Team SCRUM manager up to date with your progress, as well as your teammates and other teams that may depend on your code.
 
@@ -34,15 +34,15 @@ Once your code is ready to "Ship", the next step is to [Create a "Pull Request (
 
 ### How often should I "Commit"?
 
-Just like you want to save any changes to a document frequently, you want to "Commit" frequently as well. The unoffical phrase you'll find online is "Commit Early, Commit Often" (great advice for Git, but unadvisable for dating :) ).
+Just like you want to save any changes to a document frequently, you want to "Commit" frequently as well. The unofficial phrase you'll find online is "Commit Early, Commit Often" (great advice for Git, but unadvisable for dating :) ).
 
 Why should you "Commit Early, Commit Often"? There are a number of reasons but the top 3 are:
 
-1. Make small, bit-sized backups in case something breaks or you decide to redesign something: Git only saves your work when you commit, so if you write 300 lines of the code, then find a bug and need to go back to what you had, you are out all 300 lines of code. If you make 10 smaller commits, then you can just roll back to the last point you had good code without loosing all of your progress.
+1. Make small, bit-sized backups in case something breaks or you decide to redesign something: Git only saves your work when you commit, so if you write 300 lines of the code, then find a bug and need to go back to what you had, you are out all 300 lines of code. If you make 10 smaller commits, then you can just roll back to the last point you had good code without losing all of your progress.
 
-2. Increased clarity for code reviews and repository history: Just saying "I edited a class and fixed a bug" doesn't mean anything to anyone but you. If you go through and say "Updated variable x datatype", "Added new helper method y", "Refactored and updated documetion for z", everyone reading that can understand your thought process, what changes you made, and why you made them.
+2. Increased clarity for code reviews and repository history: Just saying "I edited a class and fixed a bug" doesn't mean anything to anyone but you. If you go through and say "Updated variable x datatype", "Added new helper method y", "Refactored and updated documentation for z", everyone reading that can understand your thought process, what changes you made, and why you made them.
 
-3. Increase transparency for your work progress: by committing and pushing your code frequently, it lets you start it, take a break, come back to it later, and then take another break without the rest of your team wonder what is happening. It also means that your teammates which may depend on your code can see drafts while your still writing it.
+3. Increase transparency for your work progress: by committing and pushing your code frequently, it lets you start it, take a break, come back to it later, and then take another break without the rest of your team wonder what is happening. It also means that your teammates which may depend on your code can see drafts while you're still writing it.
 
 Because we're using Test Driven Development (TDD), I would recommend AT LEAST 2-4 commits for each time you make a new test:
 
@@ -64,11 +64,11 @@ This effectively means that with each commit you are making the CHANGELOG of wha
 - Wrote method y to pass test x
 - Refactored method z into y
 
-This means that anyone who sees your new code on the `main` branch can see exactly what you did without even looking at their code, so they can know if it impacts them! This is even more helpful when you are working on muliple methods and classes to complete a single change.
+This means that anyone who sees your new code on the `main` branch can see exactly what you did without even looking at their code, so they can know if it impacts them! This is even more helpful when you are working on multiple methods and classes to complete a single change.
 
 ## How do I ship what I'm working on so my teammates and other teams can use it?
 
-When we talked about creating a branch, we mentioned that by working on a seperate branch other people's changes can't break your code. But by that same token, they can't access your changes in their code either. So how do you make your code acessable to everyone else? The end goal is to "Merge" in into the `main` branch of the repository, which is all the code that is done and in production. To do that, we have a 3.5 step process:
+When we talked about creating a branch, we mentioned that by working on a separate branch other people's changes can't break your code. But by that same token, they can't access your changes in their code either. So how do you make your code accessible to everyone else? The end goal is to "Merge" in into the `main` branch of the repository, which is all the code that is done and in production. To do that, we have a 3.5 step process:
 
 1. Create a "Pull Request (PR)"
 
@@ -82,7 +82,7 @@ In this section, we'll focus on creating a "Pull Request (PR)", and will come ba
 
 A "Pull Request (PR)" is essentially a process to formally declare that you want to release your code to the `main` branch (or another branch).
 
-It serves as a central place to track all of the individual commits that make up a single change in one place, a place to have coversations about how things are implemented and what is in progress, and a "complete version" of code to have others review and run though testing.
+It serves as a central place to track all of the individual commits that make up a single change in one place, a place to have conversations about how things are implemented and what is in progress, and a "complete version" of code to have others review and run though testing.
 
 Last but not least, it a way to document what is in progress and what the status is for a particular task. Everything on the PR automatically syncs to the STSB, so if you do your pull request well, this does all the tracking tasks that you need to do for you!
 
@@ -102,13 +102,13 @@ Last but not least, it a way to document what is in progress and what the status
 
 7. Give your PR a name. This should start with [Your_Team] (ex. [Middleware_01]), then have a descriptive name for what you are changing (this is just like a commit title from when you were writing code).
 
-8. In the first line of the description (where it says "Leave a comment"), explain what you were working on. If you are working in a sprint task, this should be in the form "Working on #X - Y" where X is the issue number of the sprint task, and Y is the specific subtask(s) this pull request works on or completes. If your working on a bug fix, the first line of the description should simply read "Fixed #X" where X is the issue with the bug (this will automatically link the bug to the PR for you!). If you are fixing multiple bugs or features at once, add them on additional lines with the same format as above. This syncs up what you are working on with the issue that lives in the "To Do" swimlane of the STSB.
+8. In the first line of the description (where it says "Leave a comment"), explain what you were working on. If you are working in a sprint task, this should be in the form "Working on #X - Y" where X is the issue number of the sprint task, and Y is the specific subtask(s) this pull request works on or completes. If you're working on a bug fix, the first line of the description should simply read "Fixed #X" where X is the issue with the bug (this will automatically link the bug to the PR for you!). If you are fixing multiple bugs or features at once, add them on additional lines with the same format as above. This syncs up what you are working on with the issue that lives in the "To Do" swimlane of the STSB.
 
 9. Add any extra description about what you changed or did. Note that in most cases if you "Commit Early, Commit Often", you probably won't need to add anything else here because your commits (which you can see below the description box) will already include all the information that you need.
 
 10. Click the gear icon next to "Assignees" in the right column, and select everyone who is assigned to write the code for this PR. This will at least include you, and may also include your programming partner if both of you are pushing code. Note that only one of you needs to create the PR, even if both of you are pushing code.
 
-11. Click the gear icon next to "Labels" in the right column, and select the appriote labels for the PR. For our project, this will be the name of your team (ex. "Middleware_01"), and at least one "type" label (bug, enhancement, or documentation). Note that if you are making a bug fix, select "bug". If you are working on code for a sprint item, select "enhancement". If you are working on documentation, select "documentation". If your task does multiple of these, feel free to select all of them that apply!
+11. Click the gear icon next to "Labels" in the right column, and select the appropriate labels for the PR. For our project, this will be the name of your team (ex. "Middleware_01"), and at least one "type" label (bug, enhancement, or documentation). Note that if you are making a bug fix, select "bug". If you are working on code for a sprint item, select "enhancement". If you are working on documentation, select "documentation". If your task does multiple of these, feel free to select all of them that apply!
 
 12. Click the gear icon next to "Projects" in the right column, and select the "Sprint Task Status Board (STSB)".
 
@@ -122,7 +122,7 @@ Last but not least, it a way to document what is in progress and what the status
 
 You've now published your PR! You can either keep coding if you're still working on your task(s) that you need to do before you can merge, or [Request "Code Reviews (CRs)"](#how-do-i-request-code-reviews-crs).
 
-Note, if you want to come back to your pull request and edit it later, or even just check back on it's status, you can do so by completing steps 1 and 2 above, then selecting your pull request from the list. You can [use filters (TODO)](#using-filters) to help find your PR in the list.
+Note, if you want to come back to your pull request and edit it later, or even just check back on its status, you can do so by completing steps 1 and 2 above, then selecting your pull request from the list. You can [use filters (TODO)](#using-filters) to help find your PR in the list.
 
 ## How do I check my code is ready to "Merge"?
 
@@ -146,7 +146,7 @@ From your PR:
 
 They are exactly what the name says: someone goes through and reviews the code that you've written in a PR, and either Approves, Comments on, or Rejects it.
 
-During the code review, reviewer look to make sure that everything looks correct syntaticly, that the code follows the style guide, and there aren't any bugs in it that they can see.
+During the code review, reviewer look to make sure that everything looks correct syntactically, that the code follows the style guide, and there aren't any bugs in it that they can see.
 
 ### Who do I need to review my code?
 
@@ -164,7 +164,7 @@ If you do have a PR get rejected, the reviewer should have left you either globa
 
 From your PR:
 
-1. Click the gear icon next to "Reviewers" in the right column, and select the appriote reviewers for the PR. In most cases, this will be your programming partner, and either your Team SCRUM Master or Team Assistant SCRUM Master.
+1. Click the gear icon next to "Reviewers" in the right column, and select the appropriate reviewers for the PR. In most cases, this will be your programming partner, and either your Team SCRUM Master or Team Assistant SCRUM Master.
 
 2. At the bottom of your PR, click the grey "Ready for review" next to the line that says "This pull request is still a work in progress".
 
@@ -182,7 +182,7 @@ Once all of your CRs are in the approval state, and all your checks pass, from y
 
 3. Click the green "Confirm squash and merge".
 
-There you go! You're codes now in production! If you were working off of a subtask for an issue, you can now [check that off (TODO)](#tasks)! If you were fixing a bug, the issue should have automatically closed when the PR was merged!
+There you go! You're codes now in production! If you were working off of a subtask for an issue, you can now [check that off (TODO)](#tasks)! If you were fixing a bug, the issue should have automatically closed when the PR was merged because we linked the issue to the PR!
 
 ## What's next?
 
