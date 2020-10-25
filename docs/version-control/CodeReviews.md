@@ -2,13 +2,13 @@
 
 [<-- Return to Version Control Documentation Hub](README.md)
 
-We talked about requesting a code review in our documentation on [Writing Code](WritingCode.md), but how do you give a CR? Below, we'll go over the steps that you need to give awesome CRs!
+We talked about requesting a "Code Review (CR)" in our documentation on [Writing Code and Pull Requests (PRs)](WritingCode.md), but how do you give a CR? Below, we'll go over the steps that you need to give awesome CRs!
 
 ## What are "Code Reviews (CRs)"?
 
 They are exactly what the name says: someone goes through and reviews the code that has been added to a "Pull Request (PR)", and either Approves, Comments on, or Requests changes.
 
-During the code review, reviewer look to make sure that everything looks correct syntactically, that the code follows the style guide, and there aren't any bugs in it that they can see.
+During the CR, reviewer look to make sure that everything looks correct syntactically, that the code follows the style guide, and there aren't any bugs in it that they can see.
 
 ## What should I look for as a code reviewer?
 
@@ -41,7 +41,7 @@ For this project as well, it might also be worth checking some of the PR content
 
 2. Click on the "Pull requests" tab in the **menu bar directly below the repository name (black text on a grey background)**! DO NOT click the "Pull requests" tab in the top menu bar (grey text on a black background); this is for all of the pull requests that you have open in all repos, we just need the PRs for this repo.
 
-3. Select the PR you want to add a code review to from the list. Note: you can [use filters (TODO)](#using-filters) to help find the PR you're looking for in the list.
+3. Select the PR you want to add a CR to from the list. Note: you can [use filters (TODO)](#using-filters) to help find the PR you're looking for in the list.
 
 4. If you are marked as a reviewer, then there is usually a yellow banner above the PR title that says "This pull request is waiting on your review." If that bar is there, you can click on the green "Add your review" button, and it will take you directly to the "Files changed" page. If you are not a reviewer, you can still add a review by clicking on the "Files changed" tab directly below the PR title. Note: If the PR is still in a draft status (the oval below the title is grey and says "Draft" instead of being green and saying "Open"), you can still add a review (they system doesn't stop you), but just know the changes are not final yet and are likely still under development.
 

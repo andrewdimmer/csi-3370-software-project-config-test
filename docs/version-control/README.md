@@ -23,4 +23,7 @@ For ease of readability, all of this content has been split into different secti
 Click the links below to go to the documentation on each of the different tasks you may need to do throughout the project:
 
 1. [Writing Code and Pull Requests (PRs)](WritingCode.md)
+
 2. [Code Reviews (CRs)](CodeReviews.md)
+
+3. [Issues: Bug Reports and Feature Requests](Issues.md)
