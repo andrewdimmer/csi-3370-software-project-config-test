@@ -9,8 +9,8 @@ import org.junit.jupiter.api.Test;
 @DisplayName("JUnit 5 Point Test")
 public class PointTest {
 
-  private int coordX = Math.floor(Math.random() * 100);
-  private int coordY = Math.floor(Math.random() * 100);
+  private int coordX = (int)(Math.random() * 100);
+  private int coordY = (int)(Math.random() * 100);
 
   @Test
   @DisplayName("coordX stored correctly")
