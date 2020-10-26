@@ -29,7 +29,7 @@ public class PointTest {
 
   @Test
   @DisplayName("coordZ stored correctly")
-  void coordyEqual() {
+  void coordzEqual() {
     Point p = new Point(coordX, coordY, coordZ);
     assertEquals(p.getZ(), coordZ);
   }
