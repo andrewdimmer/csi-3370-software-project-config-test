@@ -6,6 +6,9 @@ public class Point {
   private int coordY;
   private int coordZ;
 
+  /**
+   * Point Class
+   */
   public Point(int coordX, int coordY, int coordZ) {
     this.coordX = coordX;
     this.coordY = coordY;
@@ -21,7 +24,7 @@ public class Point {
   }
 
   public int getZ() {
-    return coordY;
+    return coordZ;
   }
   
 }
