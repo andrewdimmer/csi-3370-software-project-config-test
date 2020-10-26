@@ -65,7 +65,10 @@ jobs:
     steps:
       # Verify that the Java code compiles correctly
       - name: Verify that all Java code compiles
-        run: ls; javac -d bin -sourcepath source -classpath junit-5.6.2/console/junit-platform-console-standalone-1.6.2.jar $(find -name *.java)
+        run:
+          ls -l -R;
+          echo;
+          javac -d bin -sourcepath source -classpath junit-5.6.2/console/junit-platform-console-standalone-1.6.2.jar $(find -name *.java)
         # Note this uses command substitution and the find command from CSI 3660 Systems Admin I to build all Java files
   
   # Finally, we run all of the unit tests
