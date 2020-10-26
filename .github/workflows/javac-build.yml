@@ -47,11 +47,10 @@ jobs:
           mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter-params%2F5.6.2%2Fjunit-jupiter-params-5.6.2.jar' junit-jupiter-params-5.6.2.jar;
           unzip junit-jupiter-api-5.6.2.jar -d junit-jupiter-api-5.6.2;
           unzip junit-jupiter-params-5.6.2.jar -d junit-jupiter-params-5.6.2;
-          echo;
-          ls;
         # Note, we get the JARs file from getting the link from the public Maven website, then build the file structure.
     
-      # - name: Store Java Environment
+      - name: Store Java Environment
+        run: ls /
       #   uses: actions/upload-artifact@v2
       #   with:
       #     name: java-env
