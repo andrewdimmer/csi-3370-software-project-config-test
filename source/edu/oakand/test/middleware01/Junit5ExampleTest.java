@@ -27,8 +27,8 @@ public class Junit5ExampleTest {
 
   @AfterAll
   static void afterAll() {
-    System.out.println("After all test methods")
-   }
+    System.out.println("After all test methods");
+  }
 
   @Test
   @DisplayName("First test")
@@ -40,6 +40,6 @@ public class Junit5ExampleTest {
   @DisplayName("Second test")
   void secondTest() {
     System.out.println("Second test method");
-    assertEquals(1,2);
+    assertEquals(1, 2);
   }
 }
