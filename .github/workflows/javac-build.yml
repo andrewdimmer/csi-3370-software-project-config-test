@@ -28,7 +28,7 @@ jobs:
       # Installs JUnit
       - name: Install JUnit
         run:
-          sudo apt install wget
+          sudo apt install wget;
           mkdir junit-5.6.2;
           cd junit-5.6.2;
           mkdir console;
@@ -60,6 +60,7 @@ jobs:
   # Note: Test is a complete copy of build as transfering artifacts take longer than resetting the configureation does.
   test:
     # Wait for build to pass (if build fails, we don't have anything to test with)
+    needs: build
 
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -81,7 +82,7 @@ jobs:
       # Installs JUnit
       - name: Install JUnit
         run:
-          sudo apt install wget
+          sudo apt install wget;
           mkdir junit-5.6.2;
           cd junit-5.6.2;
           mkdir console;
