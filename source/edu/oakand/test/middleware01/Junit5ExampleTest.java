@@ -1,5 +1,7 @@
 package edu.oakland.test.middleware01;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -40,5 +42,6 @@ public class Junit5ExampleTest {
   @DisplayName("Second test")
   void secondTest() {
     System.out.println("Second test method");
+    assertEquals(1, 1);
   }
 }
