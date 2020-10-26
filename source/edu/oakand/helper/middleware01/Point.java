@@ -4,10 +4,17 @@ public class Point {
 
   private int coordX;
   private int coordY;
+  private int coordZ;
 
   public Point(int coordX, int coordY) {
     this.coordX = coordX;
     this.coordY = coordY;
+  }
+
+  public Point(int coordX, int coordY, int coordZ) {
+    this.coordX = coordX;
+    this.coordY = coordY;
+    this.coordZ = coordZ;
   }
 
   public int getX() {
@@ -15,6 +22,10 @@ public class Point {
   }
     
   public int getY() {
+    return coordY;
+  }
+
+  public int getZ() {
     return coordY;
   }
   
