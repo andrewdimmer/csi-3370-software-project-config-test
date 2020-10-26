@@ -2,8 +2,8 @@ package edu.oakland.helper.middleware01;
 
 public class Point {
 
-  public int coordX;
-  public int coordY;
+  private int coordX;
+  private int coordY;
 
   public Point(int coordX, int coordY) {
     this.coordX = coordX;
