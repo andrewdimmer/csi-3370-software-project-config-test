@@ -7,7 +7,7 @@ public class Point {
   private int coordZ;
 
   /**
-   * Point Class
+   * Point Class.
    */
   public Point(int coordX, int coordY, int coordZ) {
     this.coordX = coordX;
