@@ -14,14 +14,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Installs the Java JKD
-      - name: Install openjdk-11.0.8 (x64)
-        uses: actions/setup-java@v1
-        with:
-          java-version: 11.0.8 # The JDK version to make available on the path.
-          java-package: jdk # (jre, jdk, or jdk+fx) - defaults to jdk
-          architecture: x64 # (x64 or x86) - defaults to x64
-
       # Installs JUnit
       - name: Install JUnit
         run:
@@ -49,13 +41,12 @@ jobs:
           unzip junit-jupiter-params-5.6.2.jar -d junit-jupiter-params-5.6.2;
         # Note, we get the JARs file from getting the link from the public Maven website, then build the file structure.
     
-      - name: Store Java Environment
-        run: ls /
-      #   uses: actions/upload-artifact@v2
-      #   with:
-      #     name: java-env
-      #     path: /
-      #     retention-days: .01
+      - name: Store JUnit Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: junit-5.6.2
+          path: junit-5.6.2/
+          retention-days: .01
   
   # Next, we verify that the Java project builds
   build: 
@@ -71,13 +62,42 @@ jobs:
       - name: Checkout Repo Branch
         uses: actions/checkout@v2
 
+      # Installs the Java JKD
+      - name: Install openjdk-11.0.8 (x64)
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11.0.8 # The JDK version to make available on the path.
+          java-package: jdk # (jre, jdk, or jdk+fx) - defaults to jdk
+          architecture: x64 # (x64 or x86) - defaults to x64
+      
+      # Get JUnit from the setup job
+      - name: Get JUnit from setup
+        uses: actions/download-artifact@v2
+        with:
+          name: junit-5.6.2
+
       # Verify that the Java code compiles correctly
       - name: Verify that all Java code compiles
-        run:
-          ls -l -R;
-          echo;
-          javac -d bin -sourcepath source -classpath junit-5.6.2/console/junit-platform-console-standalone-1.6.2.jar $(find -name *.java)
+        run: javac -d bin -sourcepath source -classpath junit-5.6.2/console/junit-platform-console-standalone-1.6.2.jar $(find -name *.java) > javac-log.txt
         # Note this uses command substitution and the find command from CSI 3660 Systems Admin I to build all Java files
+
+      # Stores the class files to run if it builds correctly
+      - name: Store Bin for Testing
+        uses: actions/upload-artifact@v2
+        if: success()
+        with:
+          name: bin
+          path: bin/
+          retention-days: .01
+
+      # Stores the compile log if the build fails
+      - name: Store Javac Log
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: javac-log.txt
+          path: javac-log.txt
+          retention-days: 7
   
   # Finally, we run all of the unit tests
   test:
@@ -89,7 +109,35 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      # Installs the Java JKD
+      - name: Install openjdk-11.0.8 (x64)
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11.0.8 # The JDK version to make available on the path.
+          java-package: jdk # (jre, jdk, or jdk+fx) - defaults to jdk
+          architecture: x64 # (x64 or x86) - defaults to x64
+      
+      # Get JUnit from the setup job
+      - name: Get JUnit from setup
+        uses: actions/download-artifact@v2
+        with:
+          name: junit-5.6.2
+
+      # Get the bin from the build job
+      - name: Get JUnit from setup
+        uses: actions/download-artifact@v2
+        with:
+          name: bin
+
       # Verify that the Java code compiles correctly
       - name: Verify that all JUnit tests pass
-        run: java -classpath bin:junit-5.6.2/console/junit-platform-console-standalone-1.6.2.jar:junit-5.6.2/console/junit-platform-console-standalone-1.6.2.jar org.junit.platform.console.ConsoleLauncher --scan-classpath
-        # Note this uses command substitution and the find command from CSI 3660 Systems Admin I to build all Java files
+        run: java -classpath bin:junit-5.6.2/console/junit-platform-console-standalone-1.6.2.jar:junit-5.6.2/console/junit-platform-console-standalone-1.6.2.jar org.junit.platform.console.ConsoleLauncher --scan-classpath > junit-log.txt
+    
+      # Stores the JUnit log if any tests fail
+      - name: Store Javac Log
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: junit-log.txt
+          path: junit-log.txt
+          retention-days: 7
