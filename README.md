@@ -1,6 +1,3 @@
-# approval-workflow-test-repo
-Look, we know what we're doing!
-Watch, we're doing stuff!
-Fixing another bug!
-Test for the labeler!
-This is an edit to the readme.
+# csi-3370-software-project-config-test
+
+Provides a test environment for configuring GitHub Actions, Issues, Templates, etc. for the actual class project repo. Works as a scratch space for people to test and train on the approval process as well.
