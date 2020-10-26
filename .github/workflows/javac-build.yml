@@ -14,10 +14,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout Repo Branch
-        uses: actions/checkout@v2
-
       # Installs the Java JKD
       - name: Install openjdk-11.0.8 (x64)
         uses: actions/setup-java@v1
@@ -51,7 +47,16 @@ jobs:
           mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter-params%2F5.6.2%2Fjunit-jupiter-params-5.6.2.jar' junit-jupiter-params-5.6.2.jar;
           unzip junit-jupiter-api-5.6.2.jar -d junit-jupiter-api-5.6.2;
           unzip junit-jupiter-params-5.6.2.jar -d junit-jupiter-params-5.6.2;
+          echo;
+          ls;
         # Note, we get the JARs file from getting the link from the public Maven website, then build the file structure.
+    
+      # - name: Store Java Environment
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: java-env
+      #     path: /
+      #     retention-days: .01
   
   # Next, we verify that the Java project builds
   build: 
@@ -63,6 +68,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout Repo Branch
+        uses: actions/checkout@v2
+
       # Verify that the Java code compiles correctly
       - name: Verify that all Java code compiles
         run:
@@ -73,8 +82,8 @@ jobs:
   
   # Finally, we run all of the unit tests
   test:
-    # Wait to start the test script until build is complete
-    needs: build
+    # Wait to start the test script until setup and build are complete
+    needs: [setup, build]
 
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
