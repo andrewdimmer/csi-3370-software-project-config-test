@@ -16,13 +16,13 @@ public class PointTest {
   @DisplayName("coordX stored correctly")
   void coordxEqual() {
     Point p = new Point(coordX, coordY);
-    assertEquals(p.coordX, coordX);
+    assertEquals(p.getX(), coordX);
   }
 
   @Test
   @DisplayName("coordY stored correctly")
   void coordyEqual() {
     Point p = new Point(coordX, coordY);
-    assertEquals(p.coordY, coordY);
+    assertEquals(p.getY(), coordY);
   }
 }
