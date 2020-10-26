@@ -8,12 +8,14 @@ public class Point {
   public Point(int coordX, int coordY) {
     this.coordX = coordX;
     this.coordY = coordY;
-    public int getX() {
-      return coordX;
-    }
-    
-    public int getY() {
-      return coordY;
-    }
   }
+
+  public int getX() {
+    return coordX;
+  }
+    
+  public int getY() {
+    return coordY;
+  }
+  
 }
