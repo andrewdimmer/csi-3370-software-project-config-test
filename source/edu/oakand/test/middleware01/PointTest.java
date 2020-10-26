@@ -9,20 +9,20 @@ import org.junit.jupiter.api.Test;
 @DisplayName("JUnit 5 Point Test")
 public class PointTest {
 
-    private int x = Math.floor(Math.random()*100);
-    private int y = Math.floor(Math.random()*100);
+  private int coordX = Math.floor(Math.random() * 100);
+  private int coordY = Math.floor(Math.random() * 100);
 
   @Test
-  @DisplayName("x stored correctly")
-  void xEquals() {
-    Point p = new Point(x, y);
-    assertEquals(p.x, x);
+  @DisplayName("coordX stored correctly")
+  void coordxEqual() {
+    Point p = new Point(coordX, coordY);
+    assertEquals(p.coordX, coordX);
   }
 
   @Test
-  @DisplayName("y stored correctly")
-  void yEquals() {
-    Point p = new Point(x, y);
-    assertEquals(p.y, y);
+  @DisplayName("coordY stored correctly")
+  void coordyEqual() {
+    Point p = new Point(coordX, coordY);
+    assertEquals(p.coordY, coordY);
   }
 }
