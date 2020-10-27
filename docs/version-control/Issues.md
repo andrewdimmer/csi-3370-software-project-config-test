@@ -50,6 +50,8 @@ You've now submitted an issue to that team! It's now up to them to assign it out
 
 Note: this is great to not only report issues for other teams, but also self-report issues. Found a bug in code that someone else wrote? Create an issue for it, then just add them as the assignee and let them know. The issue will do the rest of the tracking for you regarding progress.
 
+Want a video tutorial? Check out [GitHub Crash Course: Issues (Feature Request and Bug Reports)](https://youtu.be/j1-xU6bmZZg)!
+
 ## "I'm fixing a bug or missing documentation. How do I track my progress?"
 
 If you're just "claiming" the issue, then all you need to do is make sure that you are the assignee, and remove any old assignees on the issue. You can also add a comment on the issue saying that you're working on it, but depending on the urgency of the issue that may or may not be required.
@@ -57,6 +59,8 @@ If you're just "claiming" the issue, then all you need to do is make sure that y
 Then, you can make all of the changes, following the instructions given on [Writing Code and Pull Requests (PRs)](WritingCode.md). Once again, feel free to add any comments to the issue if required as your working, but for most issues it should just be a simple matter of resolving it by fixing the bug or adding the documentation.
 
 Finally, so long as you include "Fixed #X" where X is the issue number, once the PR is merged, the issue will automatically close.
+
+Want a video tutorial? Check out [GitHub Crash Course: Issues (Feature Request and Bug Reports)](https://youtu.be/j1-xU6bmZZg)!
 
 ## "I need to add a Product Backlog Item (PBI) to the SPSB. How do I do this?"
 
@@ -80,6 +84,8 @@ Finally, so long as you include "Fixed #X" where X is the issue number, once the
 
 You've now recorded your PBI, and can start working on those tasks!
 
+Want a video tutorial? Check out [GitHub Crash Course: Issues (Feature Request and Bug Reports)](https://youtu.be/j1-xU6bmZZg)!
+
 ## "I'm working on a sprint task. How do I track it?"
 
 First, you make all of the changes you need to for a task (or part of a task), following the instructions given on [Writing Code and Pull Requests (PRs)](WritingCode.md). Feel free to add any comments to the issue if required as your working, but for most issues it should just be a simple matter of just doing the task.
@@ -87,6 +93,8 @@ First, you make all of the changes you need to for a task (or part of a task), f
 Then, so long as you include "Working on #X - Y" where X is the issue number and Y is the task your working on, once the PR is merged, the issue will add the PR to the worklog. If you include the specific task Y you're working on, you shouldn't need any comments at this stage either.
 
 Finally, once you are done with your task, check the box saying it is done in the issue description. If you're completing the last task of the issue, you can also click the "Close issue" button at the bottom of the issue, and you're all set!
+
+Want a video tutorial? Check out [GitHub Crash Course: Issues (Feature Request and Bug Reports)](https://youtu.be/j1-xU6bmZZg)!
 
 ## "I'm trying to find an Issue or PR. How can I filter and search for it?"
 
