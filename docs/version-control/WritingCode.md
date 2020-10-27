@@ -60,7 +60,7 @@ Because we're using Test Driven Development (TDD), I would recommend AT LEAST 2-
 
 4. Any documentation updates
 
-Want a video explanation? Check out [GitHub Crash Course: GitHub Crash Course: Is There Such Thing as Too Many Commits?](https://youtu.be/fN5Yq_pVl5w)!
+Want a video explanation? Check out [GitHub Crash Course: Is There Such Thing as Too Many Commits?](https://youtu.be/fN5Yq_pVl5w)!
 
 ### Can I "Commit" too often?
 
@@ -74,7 +74,7 @@ This effectively means that with each commit you are making the CHANGELOG of wha
 
 This means that anyone who sees your new code on the `main` branch can see exactly what you did without even looking at their code, so they can know if it impacts them! This is even more helpful when you are working on multiple methods and classes to complete a single change.
 
-Want a video explanation? Check out [GitHub Crash Course: GitHub Crash Course: Is There Such Thing as Too Many Commits?](https://youtu.be/fN5Yq_pVl5w)!
+Want a video explanation? Check out [GitHub Crash Course: Is There Such Thing as Too Many Commits?](https://youtu.be/fN5Yq_pVl5w)!
 
 ## How do I ship what I'm working on so my teammates and other teams can use it?
 
