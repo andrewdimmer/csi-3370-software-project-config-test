@@ -59,6 +59,8 @@ You've now added a CR to a PR! Once the rest of the reviewers approve it, the as
 
 The below sections provide more detail about step 5 above, and the different ways you can do this.
 
+Want a video tutorial? Check out [GitHub Crash Course: Creating Code Reviews](https://youtu.be/GbjI2x0dMK0)!
+
 ### How can I create a comment?
 
 From the "Files changed" tab:
@@ -70,6 +72,8 @@ From the "Files changed" tab:
 3. Add your comment to the text box.
 
 4. Click the green "Start a review" or "Add review comment" button. You CAN create a comment directly by clicking "Add single comment", but it's really, really rare that there is only 1 single comment on the whole PR, AND you don't care if it gets resolved or not, AND you aren't required as a reviewer anyways. Unless all of those conditions are true, it's better to just create a review (even if it is just a "Comment" review), as it reduces the notifications sent to the assignee makes everything a bit easier.
+
+Want a video tutorial? Check out [GitHub Crash Course: Creating Code Reviews](https://youtu.be/GbjI2x0dMK0)!
 
 ### Can I create a single comment about multiple lines of code?
 
@@ -89,6 +93,8 @@ Yes, you can! To do so from the "Files changed" tab:
 
 7. Click the green "Start a review" or "Add review comment" button. You CAN create a comment directly by clicking "Add single comment", but it's really, really rare that there is only 1 single comment on the whole PR, AND you don't care if it gets resolved or not, AND you aren't required as a reviewer anyways. Unless all of those conditions are true, it's better to just create a review (even if it is just a "Comment" review), as it reduces the notifications sent to the assignee makes everything a bit easier.
 
+Want a video tutorial? Check out [GitHub Crash Course: Creating Code Reviews](https://youtu.be/GbjI2x0dMK0)!
+
 ### Can I make suggestions directly?
 
 Feel that there is a change that it would be faster for you just to implement than it would be to explain it? You can add it as a suggestion! To add a suggestion to a comment (either single or multiline):
@@ -103,9 +109,13 @@ Feel that there is a change that it would be faster for you just to implement th
 
 5. Post the comment, and the suggestion will then allow the assigning to merge it directly!
 
+Want a video tutorial? Check out [GitHub Crash Course: Creating Code Reviews](https://youtu.be/GbjI2x0dMK0)!
+
 ### How can I keep track of files I've seen?
 
 Code reviews can be long! Fortunately, you can mark which files you've seen by clicking the "Viewed" checkbox on the far-right side of the file name bar for each file in the "Files changed" tab.
+
+Want a video tutorial? Check out [GitHub Crash Course: Creating Code Reviews](https://youtu.be/GbjI2x0dMK0)!
 
 ## Help! Changes were requested on my PR! What do I do?
 
@@ -124,6 +134,8 @@ That being said, there are a number of helpful techniques you can use to help ke
 5. "Commit" suggestions. Suggestions are great because the reviewer already did your work for you! Just click the "Add suggestion to batch" button! Then once all of the suggestions you want to accept have been added to the batch, you can click the "Commit suggestions" button, give your commit a descriptive tile and description, then click the green "Commit" button. It's that easy!
 
 Final note regarding making changes to a PR based on a CR: it's usually helpful to reach out to the reviewers again after you make the changes, just so they know that you're ready to go for another round of reviews!
+
+Want a video tutorial? Check out [GitHub Crash Course: Responding to Code Reviews](https://youtu.be/vSsUO_OP-f8)!
 
 ## What's next?
 

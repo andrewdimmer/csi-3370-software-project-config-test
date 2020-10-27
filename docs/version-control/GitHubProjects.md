@@ -18,6 +18,8 @@ A GitHub Project is simply a visualize issues, pull requests, and notes into swi
 
 You can also use the "Open" and "Closed" toggle to switch between viewing open and closed project boards.
 
+Want a video tutorial? Check out [GitHub Crash Course: Projects and Milestones](https://youtu.be/6G9LzEyFrhE)!
+
 ## How to I move issues and pull requests from one status to another?
 
 Thanks to GitHub's automation rules, you really shouldn't need to! Each issue and pull request will move itself to the correct status based on the status of that issue or pull request itself.
@@ -37,6 +39,8 @@ From within a project board, you can simply click on different attributes to fil
 - Clicking on yourself to see everything assigned to you
 
 You can also search and filter using the filter bar in the top, right-hand corner of the project board.
+
+Want a video tutorial? Check out [GitHub Crash Course: Projects and Milestones](https://youtu.be/6G9LzEyFrhE)!
 
 ## What's next?
 

@@ -10,6 +10,8 @@ Below, we'll go over the steps that you need to do to write and save code to Git
 
 2. "Clone" this repository from your preferred git client to whatever directory you are going to work out of.
 
+Want a video tutorial? Check out [GitHub Crash Course: Cloning a GitHub Repository](https://youtu.be/VPSPYHuahvY)!
+
 ## How do I write new code?
 
 Prerequsites: Make sure you are on the `main` branch of the repository, then right before starting this process be sure you "Pull" the `main` branch to get any new updates!
@@ -34,6 +36,8 @@ Prerequsites: Make sure you are on the `main` branch of the repository, then rig
 
 Once your code is ready to "Ship", the next step is to [Create a "Pull Request (PR)" via GitHub.com](#how-do-i-create-a-pull-request-pr) if you have not already done so, or [Request "Code Reviews (CRs) via GitHub.com"](#how-do-i-request-code-reviews-crs).
 
+Want a video tutorial? Check out [GitHub Crash Course: Writing Code to GitHub](https://youtu.be/M_O4TRYA8FU)!
+
 ### How often should I "Commit"?
 
 Just like you want to save any changes to a document frequently, you want to "Commit" frequently as well. The unofficial phrase you'll find online is "Commit Early, Commit Often" (great advice for Git, but unadvisable for dating :) ).
@@ -56,6 +60,8 @@ Because we're using Test Driven Development (TDD), I would recommend AT LEAST 2-
 
 4. Any documentation updates
 
+Want a video explanation? Check out [GitHub Crash Course: Is There Such Thing as Too Many Commits?](https://youtu.be/fN5Yq_pVl5w)!
+
 ### Can I "Commit" too often?
 
 No! One of the reasons that we're requiring pull requests in this repository is that we use a tool called "Squash and Merge", which means that no matter how many commits you make internally, there is only one that moves into the `main` branch.
@@ -67,6 +73,8 @@ This effectively means that with each commit you are making the CHANGELOG of wha
 - Refactored method z into y
 
 This means that anyone who sees your new code on the `main` branch can see exactly what you did without even looking at their code, so they can know if it impacts them! This is even more helpful when you are working on multiple methods and classes to complete a single change.
+
+Want a video explanation? Check out [GitHub Crash Course: Is There Such Thing as Too Many Commits?](https://youtu.be/fN5Yq_pVl5w)!
 
 ## How do I ship what I'm working on so my teammates and other teams can use it?
 
@@ -126,6 +134,8 @@ You've now published your PR! You can either keep coding if you're still working
 
 Note, if you want to come back to your pull request and edit it later, or even just check back on its status, you can do so by completing steps 1 and 2 above, then selecting your pull request from the list. You can [use filters](Issues.md#im-trying-to-find-an-issue-or-pr-how-can-i-filter-and-search-for-it) to help find your PR in the list.
 
+Want a video tutorial? Check out [GitHub Crash Course: Creating Pull Requests](https://youtu.be/3Q1MZjAVIiE)!
+
 ## How do I check my code is ready to "Merge"?
 
 As mentioned earlier, you need to get "Code Reviews (CRs)" and pass all the "Checks" in order to merge your code to the `main` branch.
@@ -143,6 +153,8 @@ From your PR:
 2. View the checks that failed, and each task should be a description of what the check verifies
 
 3. Fix the issue (either in the Code and push it to the PR, or within the PR itself)
+
+Want a video tutorial? Check out [GitHub Crash Course: Checks and Bots](https://youtu.be/rLciVQY9ejI)!
 
 ### What are "Code Reviews (CRs)"?
 
@@ -174,6 +186,8 @@ From your PR:
 
 It's that easy! Now you just need to wait for your reviews to review your code, and you can either "Merge" it if they approve, or go back and make changes if they didn't.
 
+Want a video tutorial? Check out [GitHub Crash Course: Requesting Code Reviews](https://youtu.be/FjrDgBOS_20)!
+
 ## How do I "Merge" my code?
 
 Finally, it's time to "Merge" your code into the `main` branch so that everyone else can use it, and it can be deployed to production.
@@ -185,6 +199,8 @@ Once all of your CRs are in the approval state, and all your checks pass, from y
 2. Review the merge commit (it should be good if your PR was filled out correctly).
 
 3. Click the green "Confirm squash and merge".
+
+Want a video tutorial? Check out [GitHub Crash Course: Merging Pull Requests](https://youtu.be/6Kbly2r-g60)!
 
 There you go! You're codes now in production! If you were working off of a subtask for an issue, you can now [check that off](Issues.md#im-working-on-a-sprint-task-how-do-i-track-it)! If you were fixing a bug, the issue should have automatically closed when the PR was merged because we linked the issue to the PR!
 
