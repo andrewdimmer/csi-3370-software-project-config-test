@@ -36,20 +36,22 @@ jobs:
           wget https://search.maven.org/remotecontent?filepath=org/junit/platform/junit-platform-console-standalone/1.6.2/junit-platform-console-standalone-1.6.2.jar;
           mv 'remotecontent?filepath=org%2Fjunit%2Fplatform%2Fjunit-platform-console-standalone%2F1.6.2%2Fjunit-platform-console-standalone-1.6.2.jar' junit-platform-console-standalone-1.6.2.jar;
           unzip junit-platform-console-standalone-1.6.2.jar -d junit-platform-console-standalone-1.6.2;
-          mkdir ../jupiter;
-          cd ../jupiter;
-          wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter/5.6.2/junit-jupiter-5.6.2.jar;
-          mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter%2F5.6.2%2Fjunit-jupiter-5.6.2.jar' junit-jupiter-5.6.2.jar;
-          wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar;
-          mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter-api%2F5.6.2%2Fjunit-jupiter-api-5.6.2.jar' junit-jupiter-api-5.6.2.jar;
-          wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar;
-          mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter-engine%2F5.6.2%2Fjunit-jupiter-engine-5.6.2.jar' junit-jupiter-engine-5.6.2.jar;
-          wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter-migrationsupport/5.6.2/junit-jupiter-migrationsupport-5.6.2.jar;
-          mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter-migrationsupport%2F5.6.2%2Fjunit-jupiter-migrationsupport-5.6.2.jar' junit-jupiter-migrationsupport-5.6.2.jar;
-          wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar;
-          mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter-params%2F5.6.2%2Fjunit-jupiter-params-5.6.2.jar' junit-jupiter-params-5.6.2.jar;
-          unzip junit-jupiter-api-5.6.2.jar -d junit-jupiter-api-5.6.2;
-          unzip junit-jupiter-params-5.6.2.jar -d junit-jupiter-params-5.6.2;
+          # The following build out another part of the JUnit file structure, but they don't appear to be required...
+          # Removed for now to streamline the build process and speed up tests, provided that tests still run without these files.
+          # mkdir ../jupiter;
+          # cd ../jupiter;
+          # wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter/5.6.2/junit-jupiter-5.6.2.jar;
+          # mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter%2F5.6.2%2Fjunit-jupiter-5.6.2.jar' junit-jupiter-5.6.2.jar;
+          # wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar;
+          # mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter-api%2F5.6.2%2Fjunit-jupiter-api-5.6.2.jar' junit-jupiter-api-5.6.2.jar;
+          # wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar;
+          # mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter-engine%2F5.6.2%2Fjunit-jupiter-engine-5.6.2.jar' junit-jupiter-engine-5.6.2.jar;
+          # wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter-migrationsupport/5.6.2/junit-jupiter-migrationsupport-5.6.2.jar;
+          # mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter-migrationsupport%2F5.6.2%2Fjunit-jupiter-migrationsupport-5.6.2.jar' junit-jupiter-migrationsupport-5.6.2.jar;
+          # wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar;
+          # mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter-params%2F5.6.2%2Fjunit-jupiter-params-5.6.2.jar' junit-jupiter-params-5.6.2.jar;
+          # unzip junit-jupiter-api-5.6.2.jar -d junit-jupiter-api-5.6.2;
+          # unzip junit-jupiter-params-5.6.2.jar -d junit-jupiter-params-5.6.2;
         # Note, we get the JARs file from getting the link from the public Maven website, then build the file structure.
 
       # Compile the Java code
@@ -90,20 +92,22 @@ jobs:
           wget https://search.maven.org/remotecontent?filepath=org/junit/platform/junit-platform-console-standalone/1.6.2/junit-platform-console-standalone-1.6.2.jar;
           mv 'remotecontent?filepath=org%2Fjunit%2Fplatform%2Fjunit-platform-console-standalone%2F1.6.2%2Fjunit-platform-console-standalone-1.6.2.jar' junit-platform-console-standalone-1.6.2.jar;
           unzip junit-platform-console-standalone-1.6.2.jar -d junit-platform-console-standalone-1.6.2;
-          mkdir ../jupiter;
-          cd ../jupiter;
-          wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter/5.6.2/junit-jupiter-5.6.2.jar;
-          mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter%2F5.6.2%2Fjunit-jupiter-5.6.2.jar' junit-jupiter-5.6.2.jar;
-          wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar;
-          mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter-api%2F5.6.2%2Fjunit-jupiter-api-5.6.2.jar' junit-jupiter-api-5.6.2.jar;
-          wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar;
-          mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter-engine%2F5.6.2%2Fjunit-jupiter-engine-5.6.2.jar' junit-jupiter-engine-5.6.2.jar;
-          wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter-migrationsupport/5.6.2/junit-jupiter-migrationsupport-5.6.2.jar;
-          mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter-migrationsupport%2F5.6.2%2Fjunit-jupiter-migrationsupport-5.6.2.jar' junit-jupiter-migrationsupport-5.6.2.jar;
-          wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar;
-          mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter-params%2F5.6.2%2Fjunit-jupiter-params-5.6.2.jar' junit-jupiter-params-5.6.2.jar;
-          unzip junit-jupiter-api-5.6.2.jar -d junit-jupiter-api-5.6.2;
-          unzip junit-jupiter-params-5.6.2.jar -d junit-jupiter-params-5.6.2;
+          # The following build out another part of the JUnit file structure, but they don't appear to be required...
+          # Removed for now to streamline the build process and speed up tests, provided that tests still run without these files.
+          # mkdir ../jupiter;
+          # cd ../jupiter;
+          # wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter/5.6.2/junit-jupiter-5.6.2.jar;
+          # mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter%2F5.6.2%2Fjunit-jupiter-5.6.2.jar' junit-jupiter-5.6.2.jar;
+          # wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar;
+          # mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter-api%2F5.6.2%2Fjunit-jupiter-api-5.6.2.jar' junit-jupiter-api-5.6.2.jar;
+          # wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar;
+          # mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter-engine%2F5.6.2%2Fjunit-jupiter-engine-5.6.2.jar' junit-jupiter-engine-5.6.2.jar;
+          # wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter-migrationsupport/5.6.2/junit-jupiter-migrationsupport-5.6.2.jar;
+          # mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter-migrationsupport%2F5.6.2%2Fjunit-jupiter-migrationsupport-5.6.2.jar' junit-jupiter-migrationsupport-5.6.2.jar;
+          # wget https://search.maven.org/remotecontent?filepath=org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar;
+          # mv 'remotecontent?filepath=org%2Fjunit%2Fjupiter%2Fjunit-jupiter-params%2F5.6.2%2Fjunit-jupiter-params-5.6.2.jar' junit-jupiter-params-5.6.2.jar;
+          # unzip junit-jupiter-api-5.6.2.jar -d junit-jupiter-api-5.6.2;
+          # unzip junit-jupiter-params-5.6.2.jar -d junit-jupiter-params-5.6.2;
         # Note, we get the JARs file from getting the link from the public Maven website, then build the file structure.
 
       # Compile the Java code
