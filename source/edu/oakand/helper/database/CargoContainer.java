@@ -42,7 +42,7 @@ public class CargoContainer {
   }
 
   public String returnProperties() {
-    return "Color: "+ color +" Location: "+ location +" containerId: "+ String.valueOf(containerId);
+    return "Color: " + color + " Location: " + location + " containerId: " + String.valueOf(containerId);
   }
   
 }
