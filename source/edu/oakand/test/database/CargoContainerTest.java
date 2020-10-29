@@ -29,19 +29,19 @@ public class CargoContainerTest {
   @DisplayName("Test storing of location")
   void locationsEqual() {
     CargoContainer cargo = new CargoContainer(color, location, item, randInt);
-    assertEquals(cargo.returnlocation(), location);
+    assertEquals(cargo.returnLocation(), location);
   }
 
   @Test
   @DisplayName("Test storing of item")
-  void coordzEqual() {
+  void contentsEqual() {
     CargoContainer cargo = new CargoContainer(color, location, item, randInt);
     assertEquals(cargo.getContent(), item);
   }
 
   @Test
   @DisplayName("Test storing of ID")
-  void coordzEqual() {
+  void IdEqual() {
     CargoContainer cargo = new CargoContainer(color, location, item, randInt);
     assertEquals(cargo.returnId(), randInt);
   }
