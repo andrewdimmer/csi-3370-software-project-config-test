@@ -5,18 +5,18 @@ public class CargoContainer {
   private String color;
   private String location;
   private String content;
-  private int containerID;
+  private int containerId;
 
 /**
 * Main cargo container class. Used for testing uploading and using pull requests.
 * @author Database Team
 * @version 1.0
 */
-  public CargoContainer(String color, String location, String content, int containerID) {
+  public CargoContainer(String color, String location, String content, int containerId) {
     this.color = color;
     this.location = location;
     this.content = content;
-    this.containerID = containerID;
+    this.containerId = containerId;
   }
 
   public String returnColor() {
@@ -36,11 +36,11 @@ public class CargoContainer {
   }
 
   public int returnID(){
-    return containerID;
+    return containerId;
   }
 
   public String returnProperties(){
-    return "Color: "+color+" Location: "+location+" containerID: "+String.valueOf(containerID);
+    return "Color: "+color+" Location: "+location+" containerId: "+String.valueOf(containerId);
   }
   
 }
