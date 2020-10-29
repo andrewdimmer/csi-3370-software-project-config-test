@@ -1,8 +1,11 @@
 package edu.oakland.test.database;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import java.util.Random;
+
 import edu.oakland.helper.database.CargoContainer;
+
+import java.util.Random;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
