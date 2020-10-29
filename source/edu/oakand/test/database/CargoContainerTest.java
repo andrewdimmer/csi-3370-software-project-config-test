@@ -7,7 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("CargoContainer Test")
-public class CargoContainerstest {
+public class CargoContainerTest {
 
   private String[] colors = {"blue", "green", "red", "purple", "atm"};
   private String[] locations = {"Oakland University", "Location 2"};

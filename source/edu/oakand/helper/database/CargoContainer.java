@@ -7,11 +7,11 @@ public class CargoContainer {
   private String content;
   private int containerId;
 
-/**
-* Main cargo container class. Used for testing uploading and using pull requests.
-* @author Database Team
-* @version 1.0
-*/
+  /**
+  * Main cargo container class. Used for testing uploading and using pull requests.
+  * @author Database Team
+  * @version 1.0
+  */
   public CargoContainer(String color, String location, String content, int containerId) {
     this.color = color;
     this.location = location;
