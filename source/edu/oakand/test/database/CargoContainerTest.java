@@ -42,6 +42,6 @@ public class CargoContainerTest {
   @DisplayName("Test storing of ID")
   void coordzEqual() {
     CargoContainer cargo = new CargoContainer(color, location, item, randInt);
-    assertEquals(cargo.returnID(), randInt);
+    assertEquals(cargo.returnId(), randInt);
   }
 }

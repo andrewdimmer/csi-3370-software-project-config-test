@@ -9,7 +9,9 @@ public class CargoContainer {
 
   /**
   * Main cargo container class. Used for testing uploading and using pull requests.
+
   * @author Database Team
+  *
   * @version 1.0
   */
   public CargoContainer(String color, String location, String content, int containerId) {
@@ -35,12 +37,12 @@ public class CargoContainer {
     return "Yes.";
   }
 
-  public int returnID(){
+  public int returnId() {
     return containerId;
   }
 
-  public String returnProperties(){
-    return "Color: "+color+" Location: "+location+" containerId: "+String.valueOf(containerId);
+  public String returnProperties() {
+    return "Color: "+ color +" Location: "+ location +" containerId: "+ String.valueOf(containerId);
   }
   
 }
