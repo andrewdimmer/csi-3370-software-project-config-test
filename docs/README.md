@@ -28,6 +28,8 @@ This will contain the important docs regarding the project description and proje
 
 This will contain any sample practice exercises to have you get familiar with Git, GitHub, and the workflow of how we're managing this project.
 
+[Click here to access the practice exercise!](practice/)
+
 ## Admin
 
 ## Integration
