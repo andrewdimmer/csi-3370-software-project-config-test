@@ -16,11 +16,11 @@ The professor is the product owner. All requirements come from the professor.
 
 \- 2020_Fall_CSI3370 Class Project SCRUM Team Assignments, Roles & Responsibilities_v1.0_201018
 
-**Project SCRUM Master:** Brendan Fraser ( @brendanfraser597 )
+**Project SCRUM Master:** Brendan Fraser ([@brendanfraser597](https://github.com/brendanfraser597/))
 
-**Project SCRUM Assistant Master:** Tessa Peruzzi ( @TessaPeruzzi )
+**Project SCRUM Assistant Master:** Tessa Peruzzi ([@TessaPeruzzi](https://github.com/TessaPeruzzi/))
 
-**Project SCRUM Integration Master:** Andrew Dimmer ( @andrewdimmer )
+**Project SCRUM Integration Master:** Andrew Dimmer ([@andrewdimmer](https://github.com/andrewdimmer/))
 
 ## Display
 
@@ -32,37 +32,37 @@ The professor is the product owner. All requirements come from the professor.
 
 In particular, the Display_01 team is in charge of the GPS Receiver and the ~~GIS RFID Transponder Interface~~ (cut due to time constraints by the professor).
 
-**Team SCRUM Master:** Eric Chan ( @EC01EC )
+**Team SCRUM Master:** Eric Chan ([@EC01EC](https://github.com/EC01EC/))
 
-**Team SCRUM Assistant Master:** Steve Catherman ( @stevecatherman )
+**Team SCRUM Assistant Master:** Steve Catherman ([@stevecatherman](https://github.com/stevecatherman/))
 
-**Team SCRUM Integrator:** Cody Asher ( @casher-ou )
+**Team SCRUM Integrator:** Cody Asher ([@casher-ou](https://github.com/casher-ou/))
 
 **Team Members:**
 
-- John Akroush ( @John-A11 )
-- Evan Lilley ( @elilley15 )
-- David Lindner ( @DLidz )
-- Andrew Poynter ( @atpoynter )
-- Reed Sikorski ( @reedsikorskiOU )
+- John Akroush ([@John-A11](https://github.com/John-A11/))
+- Evan Lilley ([@elilley15](https://github.com/elilley15/))
+- David Lindner ([@DLidz](https://github.com/DLidz/))
+- Andrew Poynter ([@atpoynter](https://github.com/atpoynter/))
+- Reed Sikorski ([@reedsikorskiOU](https://github.com/reedsikorskiOU/))
 
 ### Display_02
 
 In particular, the Display_02 team is in charge of the COMM 2-Way Link Interface.
 
-**Team SCRUM Master:** Jessica Cortes ( @jcortes18 )
+**Team SCRUM Master:** Jessica Cortes ([@jcortes18](https://github.com/jcortes18/))
 
-**Team SCRUM Assistant Master:** Sydney Hill ( @sydneyhill3901 )
+**Team SCRUM Assistant Master:** Sydney Hill ([@sydneyhill3901](https://github.com/sydneyhill3901/))
 
-**Team SCRUM Integrator:** Jonathan Chan ( @Volter43 )
+**Team SCRUM Integrator:** Jonathan Chan ([@Volter43](https://github.com/Volter43/))
 
 **Team Members:**
 
-- David Baker ( @Dbaker19972 )
-- Paul Hardwoodward ( @phardwoodward )
-- Anthony Hartman ( @Ahartman3 )
-- Tin Liu ( @MetalMan1992 )
-- Jacob McCloud ( @jmccloud827 )
+- David Baker ([@Dbaker19972](https://github.com/Dbaker19972/))
+- Paul Hardwoodward ([@phardwoodward](https://github.com/phardwoodward/))
+- Anthony Hartman ([@Ahartman3](https://github.com/Ahartman3/))
+- Tin Liu ([@MetalMan1992](https://github.com/MetalMan1992/))
+- Jacob McCloud ([@jmccloud827](https://github.com/jmccloud827/))
 - Yousif Sallan (TODO: Add GitHub Username once I have it)
 
 ## Middleware
@@ -75,39 +75,39 @@ In particular, the Display_02 team is in charge of the COMM 2-Way Link Interface
 
 In particular, the Middleware_01 team is in charge of the GIS Processor.
 
-**Team SCRUM Master:** Brenda Morquecho ( @brendam19 )
+**Team SCRUM Master:** Brenda Morquecho ([@brendam19](https://github.com/brendam19/))
 
-**Team SCRUM Assistant Master:** Julia Wang ( @juliawang2014 )
+**Team SCRUM Assistant Master:** Julia Wang ([@juliawang2014](https://github.com/juliawang2014/))
 
-**Team SCRUM Integrator:** Martin Hughes ( @martinhughes0722 )
+**Team SCRUM Integrator:** Martin Hughes ([@martinhughes0722](https://github.com/martinhughes0722/))
 
 **Team Members:**
 
-- Stan Barczak ( @BarczakS )
-- Y Duong ( @yduong )
-- Syed Hayat ( @shayat97 )
-- Talha Memon ( @slackjaw1431 )
-- Pujan Shah ( @Bimmerboi-248 )
-- Steven Naoum ( @san4497 )
+- Stan Barczak ([@BarczakS](https://github.com/BarczakS/))
+- Y Duong ([@yduong](https://github.com/yduong/))
+- Syed Hayat ([@shayat97](https://github.com/shayat97/))
+- Talha Memon ([@slackjaw1431](https://github.com/slackjaw1431/))
+- Pujan Shah ([@Bimmerboi-248](https://github.com/Bimmerboi-248/))
+- Steven Naoum ([@san4497](https://github.com/san4497/))
 
 ### Middleware_02
 
 In particular, the Middleware_02 team is in charge of the COMM Link Manager.
 
-**Team SCRUM Master:** Kenzie King ( @mckenzieking )
+**Team SCRUM Master:** Kenzie King ([@mckenzieking](https://github.com/mckenzieking/))
 
-**Team SCRUM Assistant Master:** Kal Willard ( @kwillard34 )
+**Team SCRUM Assistant Master:** Kal Willard ([@kwillard34](https://github.com/kwillard34/))
 
-**Team SCRUM Integrator:** Rayvin Benno ( @tomtomtomcat )
+**Team SCRUM Integrator:** Rayvin Benno ([@tomtomtomcat](https://github.com/tomtomtomcat/))
 
 **Team Members:**
 
-- Nik Bergamin ( @nbergamin123 )
-- Rio Capollari ( @rcapollari )
-- Ali El-Nazly ( @GitLee32 )
+- Nik Bergamin ([@nbergamin123](https://github.com/nbergamin123/))
+- Rio Capollari ([@rcapollari](https://github.com/rcapollari/))
+- Ali El-Nazly ([@GitLee32](https://github.com/GitLee32/))
 - Tyler Rode (TODO: Add GitHub Username once I have it)
-- Nou Moua ( @NMoua-Edu )
-- Caleb White ( @windwakes )
+- Nou Moua ([@NMoua-Edu](https://github.com/NMoua-Edu/))
+- Caleb White ([@windwakes](https://github.com/windwakes/))
 
 ## Database
 
@@ -117,16 +117,16 @@ In particular, the Middleware_02 team is in charge of the COMM Link Manager.
 
 In particular, the Database team is in charge of the ~~GIS Volatile Info~~ (cut due to time constraints by the professor), GIS Persistent Info, ~~COMM Volatile Info~~ (cut due to time constraints by the professor), and COMM Persistent Info.
 
-**Team SCRUM Master:** Cam'Ron Grant ( @camrongrant1 )
+**Team SCRUM Master:** Cam'Ron Grant ([@camrongrant1](https://github.com/camrongrant1/))
 
-**Team SCRUM Assistant Master:** Kyle Poterek ( @kylepoterek )
+**Team SCRUM Assistant Master:** Kyle Poterek ([@kylepoterek](https://github.com/kylepoterek/))
 
-**Team SCRUM Integrator:** Mathew Yaldo ( @MathewYaldo )
+**Team SCRUM Integrator:** Mathew Yaldo ([@MathewYaldo](https://github.com/MathewYaldo/))
 
 **Team Members:**
 
-- Robertson Brinker ( @robertsonbrinker )
-- Jake Gleason ( @Jake-wq )
-- Ian Klaus ( @Ian-Klaus )
-- Kemal Koymen ( @letthatbe )
-- Endrit Zenuni ( @Endritz )
+- Robertson Brinker ([@robertsonbrinker](https://github.com/robertsonbrinker/))
+- Jake Gleason ([@Jake-wq](https://github.com/Jake-wq/))
+- Ian Klaus ([@Ian-Klaus](https://github.com/Ian-Klaus/))
+- Kemal Koymen ([@letthatbe](https://github.com/letthatbe/))
+- Endrit Zenuni ([@Endritz](https://github.com/Endritz/))
