@@ -4,13 +4,13 @@ The purpose of this exercise is to help you get familiar with Git, GitHub, and t
 
 ## For Team SCRUM Masters
 
-Team leads will create a sprint item for their team. The user story will be "Complete GitHub Practice", and they will have an item called "Complete my GitHub Practice" assigned out to each team member. Be sure to use the appropriate labels, projects, milestones, and assignees!
+Team leads will create a sprint item for their team. The user story will be "[TEAM_NAME] Complete GitHub Practice", and they will have an item called "Complete my GitHub Practice" assigned out to each team member. Be sure to use the appropriate labels, projects, milestones, and assignees!
 
 ## For each person
 
 ### Open an issue
 
-Each team member will open up a bug for their programming pair partner. The bug title will be "@[GitHub Username] Practice Using GitHub. Make sure to add the appropriate labels, projects, milestones, and assignee!
+Each team member will open up a bug for their programming pair partner. The bug title will be "[TEAM_NAME] @GitHubUsername Practice Using GitHub". Make sure to add the appropriate labels, projects, milestones, and assignee!
 
 ### Add some code
 
@@ -19,7 +19,7 @@ Each team member will open up a bug for their programming pair partner. The bug 
 3. Commit your code, and open a pull request draft with the correct title, issue references, labels, assignees, etc.
 4. Make code changes and commit them until you pass the automated build tests.
 5. Add your programming pair partner as a reviewer, then mark the draft as "Ready for Review".
-6. Once they review it, merge and you're all set with teh programming.
+6. Once they review it, merge and you're all set with the programming.
 7. Double check that your bug is closed, then check off your task on the use story.
 
 ### Add a code review
