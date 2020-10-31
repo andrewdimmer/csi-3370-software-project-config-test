@@ -1,9 +1,9 @@
 ---
-name: Middleware_01 Bug report
+name: Display_01 Bug report
 about: Create a report to help us improve
-title: "[Middleware_01]"
-labels: Middleware_01, bug
-assignees: brendam19, juliawang2014, martinhughes0722
+title: "[Display_01]"
+labels: Display_01, bug
+assignees: EC01EC, stevecatherman, casher-ou
 ---
 
 **Describe the bug**
