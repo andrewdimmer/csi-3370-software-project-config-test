@@ -61,7 +61,7 @@ In particular, the Display_02 team is in charge of the COMM 2-Way Link Interface
 - David Baker (@Dbaker19972)
 - Paul Hardwoodward (@phardwoodward)
 - Anthony Hartman (@Ahartman3)
-- Tin Liu (MetalMan1992@)
+- Tin Liu (@MetalMan1992)
 - Jacob McCloud (@jmccloud827)
 - Yousif Sallan (TODO: Add GitHub Username once I have it)
 
