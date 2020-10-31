@@ -1,9 +1,9 @@
 ---
-name: Middleware_01 Sprint Tasks
+name: Display_01 Sprint Tasks
 about: A user story for a sprint
-title: "[Middleware_01]"
-labels: enhancement, Middleware_01
-assignees: brendam19, juliawang2014, martinhughes0722, BarczakS, yduong, shayat97, slackjaw1431, Bimmerboi-248, san4497
+title: "[Display_01]"
+labels: enhancement, Display_01
+assignees: EC01EC, stevecatherman, casher-ou, John-A11, elilley15, DLidz, atpoynter, reedsikorskiOU
 ---
 
 **What is the use case? Please describe.**

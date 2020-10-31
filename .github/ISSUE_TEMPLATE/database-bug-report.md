@@ -1,9 +1,9 @@
 ---
-name: Middleware_01 Bug report
+name: Database Bug report
 about: Create a report to help us improve
-title: "[Middleware_01]"
-labels: Middleware_01, bug
-assignees: brendam19, juliawang2014, martinhughes0722
+title: "[Database]"
+labels: Database, bug
+assignees: camrongrant1, kylepoterek, MathewYaldo
 ---
 
 **Describe the bug**
