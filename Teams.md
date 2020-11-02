@@ -63,7 +63,7 @@ In particular, the Display_02 team is in charge of the COMM 2-Way Link Interface
 - Anthony Hartman ([@Ahartman3](https://github.com/Ahartman3/))
 - Tin Liu ([@MetalMan1992](https://github.com/MetalMan1992/))
 - Jacob McCloud ([@jmccloud827](https://github.com/jmccloud827/))
-- Yousif Sallan (TODO: Add GitHub Username once I have it)
+- Yousif Sallan ([@yousifsallan](https://github.com/yousifsallan/))
 
 ## Middleware
 
@@ -84,7 +84,7 @@ In particular, the Middleware_01 team is in charge of the GIS Processor.
 **Team Members:**
 
 - Stan Barczak ([@BarczakS](https://github.com/BarczakS/))
-- Y Duong ([@yduong](https://github.com/yduong/))
+- Y Duong ([@duongy18418](https://github.com/duongy18418/))
 - Syed Hayat ([@shayat97](https://github.com/shayat97/))
 - Talha Memon ([@slackjaw1431](https://github.com/slackjaw1431/))
 - Pujan Shah ([@Bimmerboi-248](https://github.com/Bimmerboi-248/))
@@ -105,7 +105,7 @@ In particular, the Middleware_02 team is in charge of the COMM Link Manager.
 - Nik Bergamin ([@nbergamin123](https://github.com/nbergamin123/))
 - Rio Capollari ([@rcapollari](https://github.com/rcapollari/))
 - Ali El-Nazly ([@GitLee32](https://github.com/GitLee32/))
-- Tyler Rode (TODO: Add GitHub Username once I have it)
+- Tyler Rode ([@Trode21](https://github.com/Trode21/))
 - Nou Moua ([@NMoua-Edu](https://github.com/NMoua-Edu/))
 - Caleb White ([@windwakes](https://github.com/windwakes/))
 
