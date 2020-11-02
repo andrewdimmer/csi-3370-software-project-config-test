@@ -3,7 +3,7 @@ name: Middleware_02 Sprint Tasks
 about: A user story for a sprint
 title: "[Middleware_02]"
 labels: enhancement, Middleware_02
-assignees: mckenzieking, kwillard34, tomtomtomcat, nbergamin123, rcapollari, GitLee32, NMoua-Edu, windwakes
+assignees: mckenzieking, kwillard34, tomtomtomcat, nbergamin123, rcapollari, GitLee32, NMoua-Edu, windwakes, Trode21
 ---
 
 **What is the use case? Please describe.**

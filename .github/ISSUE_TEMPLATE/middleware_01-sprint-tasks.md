@@ -3,7 +3,7 @@ name: Middleware_01 Sprint Tasks
 about: A user story for a sprint
 title: "[Middleware_01]"
 labels: enhancement, Middleware_01
-assignees: brendam19, juliawang2014, martinhughes0722, BarczakS, yduong, shayat97, slackjaw1431, Bimmerboi-248, san4497
+assignees: brendam19, juliawang2014, martinhughes0722, BarczakS, duongy18418, shayat97, slackjaw1431, Bimmerboi-248, san4497
 ---
 
 **What is the use case? Please describe.**
