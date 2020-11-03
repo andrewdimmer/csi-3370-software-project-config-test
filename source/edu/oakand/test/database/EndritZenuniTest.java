@@ -10,8 +10,8 @@ import org.junit.jupiter.api.Test;
 @DisplayName("EndritZenuni Test")
 public class EndritZenuniTest {
     
-  private int randNum = (int)(Math.random() * 10);
-  private int randNum2 = (int)(Math.random() * 10);
+  private int randNum = (int) (Math.random() * 10);
+  private int randNum2 = (int) (Math.random() * 10);
 
 
   @Test
