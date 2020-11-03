@@ -16,14 +16,14 @@ public class EndritZenuniTest {
 
   @Test
   @DisplayName("Add function")
-  void addEqual(){
+  void addEqual() {
     EndritZenuni ez = new Mathematics(randNum, randNum2);
     assertEquals(ez.add(), randNum + randNum2);
   }
 
   @Test
   @DisplayName("subtract function")
-  void subtractEqual(){
+  void subtractEqual() {
       EndritZenuni ez = new Mathematics(randNum, randNum2);
       assertEquals(ez.add(), randNum - randNum2);
   }
