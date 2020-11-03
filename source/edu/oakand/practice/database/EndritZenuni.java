@@ -6,9 +6,9 @@ public class EndritZenuni {
   private int numX;
   private int numY;
 
-  public void mathematics(int x, int y) {
-    this.x = numX;
-    this.y = numY;
+  public void mathematics(int numX, int numY) {
+    this.numX = numX;
+    this.numY = numY;
   }
 
   public int add() {
