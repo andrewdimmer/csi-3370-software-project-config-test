@@ -15,8 +15,4 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-source/edu/oakand/test/.DS_Store
-source/edu/oakand/helper/database/.DS_Store
-source/edu/oakand/helper/.DS_Store
-source/edu/oakand/.DS_Store
-source/edu/oakand/practice/database/.DS_Store
+
