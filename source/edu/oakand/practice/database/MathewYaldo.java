@@ -1,4 +1,5 @@
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 @DisplayName("JUnit 5 Example")
 class MathewYaldo {
