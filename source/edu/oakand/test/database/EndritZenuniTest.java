@@ -1,9 +1,8 @@
 package edu.oakland.test.database;
 
-import edu.oakland.helper.database.EndritZenuni;
-import jdk.internal.jline.internal.TestAccessible;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import edu.oakland.helper.database.EndritZenuni;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
