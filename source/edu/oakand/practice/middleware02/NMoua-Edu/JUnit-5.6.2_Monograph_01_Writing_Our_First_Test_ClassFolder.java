@@ -3,33 +3,33 @@ import org.junit.jupiter.api.*;
 @DisplayName("JUnit 5 Example")
 class JUnit5ExampleTest {
 
-	@BeforeAll 
+@BeforeAll 
 	static void beforeAll(){
 		System.out.println("Before all test method");
 	}
 
-	@BeforeEach
+@BeforeEach
 	void beforeEach(){
 		System.out.println("Before each test method");
 	}
 
-	@AfterEach
+@AfterEach
 	void aftereach(){
 		System.out.println("After each test method");
 	}
 
-	@AfterAll
+@AfterAll
 	static void afterall(){
 		System.out.println("After all test method");
 	}
 
-	@Test 
+@Test 
 	@DisplayName("First test")
 	void firstTest(){
 		System.out.println("First test method");
 	}
 
-	@Test 
+@Test 
 	@DisplayName("Second test")
 	void secondTest(){
 		System.out.println("Second test method");
