@@ -24,8 +24,8 @@ public class EndritZenuniTest {
   @Test
   @DisplayName("subtract function")
   void subtractEqual() {
-      EndritZenuni ez = new Mathematics(randNum, randNum2);
-      assertEquals(ez.add(), randNum - randNum2);
+    EndritZenuni ez = new Mathematics(randNum, randNum2);
+    assertEquals(ez.add(), randNum - randNum2);
   }
 
 
