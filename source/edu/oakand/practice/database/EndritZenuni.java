@@ -6,7 +6,7 @@ public class EndritZenuni {
   private int numX;
   private int numY;
 
-  public void Mathematics(int x, int y) {
+  public void mathematics(int x, int y) {
     this.x = numX;
     this.y = numY;
   }
