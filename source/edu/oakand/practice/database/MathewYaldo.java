@@ -1,4 +1,3 @@
-package edu.oakland.test.database;
 
 
 import org.junit.jupiter.api.DisplayName;
