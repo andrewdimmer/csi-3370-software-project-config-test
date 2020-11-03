@@ -7,7 +7,7 @@ public class EndritZenuni {
   private int numX;
   private int numY;
 
-  public mathematics(int numX, int numY) {
+  public EndritZenuni(int numX, int numY) {
     this.numX = numX;
     this.numY = numY;
   }
