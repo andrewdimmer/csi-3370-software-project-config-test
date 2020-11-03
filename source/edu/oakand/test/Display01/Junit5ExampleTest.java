@@ -1,4 +1,4 @@
-package edu.oakland.test.Display01;
+package edu.oakland.test.display01;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
