@@ -23,6 +23,6 @@ public class EndritZenuniTest {
   @DisplayName("subtract function")
   void subtractEqual() {
     EndritZenuni ez = new EndritZenuni(randNum, randNum2);
-    assertEquals(ez.add(), randNum - randNum2);
+    assertEquals(ez.subtract(), randNum - randNum2);
   }
 }
