@@ -3,10 +3,11 @@ package edu.oakland.helper.database;
 
 //practice for github
 public class EndritZenuni {
+
   private int numX;
   private int numY;
 
-  public void mathematics(int numX, int numY) {
+  public mathematics(int numX, int numY) {
     this.numX = numX;
     this.numY = numY;
   }
@@ -18,4 +19,5 @@ public class EndritZenuni {
   public int subtract() {
     return numX - numY;
   }
+
 }

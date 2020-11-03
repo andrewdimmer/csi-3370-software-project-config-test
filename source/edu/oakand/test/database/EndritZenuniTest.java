@@ -12,7 +12,6 @@ public class EndritZenuniTest {
   private int randNum = (int) (Math.random() * 10);
   private int randNum2 = (int) (Math.random() * 10);
 
-
   @Test
   @DisplayName("Add function")
   void addEqual() {
@@ -26,6 +25,4 @@ public class EndritZenuniTest {
     EndritZenuni ez = new mathematics(randNum, randNum2);
     assertEquals(ez.add(), randNum - randNum2);
   }
-
-
 }
