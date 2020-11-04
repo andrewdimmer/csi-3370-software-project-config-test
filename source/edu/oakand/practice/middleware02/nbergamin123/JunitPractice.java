@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.*;
 
-@DisplayName("SIS01 Test")
-class SIS01Test{
+@DisplayName("Junit Practice")
+class JunitPractice{
 	
 	@BeforeAll
 	static void beforeAll() {
