@@ -6,7 +6,7 @@ import org.junit.jupiter.api.*;
 class Junit5ExampleTest {
 
 @BeforeAll
-  static void beforeAll() {
+    static void beforeAll() {
     System.out.println("Before all test methods");
   }
 
