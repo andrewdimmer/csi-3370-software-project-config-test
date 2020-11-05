@@ -37,7 +37,7 @@ class Junit5exampletest {
   @Test
   @DisplayName("Second test")
   void secondTest(){
-    
+
     System.out.println("Second test method");
   }
 }
