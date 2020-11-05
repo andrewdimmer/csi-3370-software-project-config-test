@@ -1,3 +1,9 @@
+package edu.oakland.practice.display01.stevecatherman;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.*;
 
 @DisplayName("JUnit 5 Example")
