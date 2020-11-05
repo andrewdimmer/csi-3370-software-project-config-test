@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.*;
 
 @DisplayName("JUnit 5 Example")
-class Junit5exampletest {
+class Junit5exampletest{
 
   @BeforeAll
   static void beforeAll(){
@@ -40,5 +40,4 @@ class Junit5exampletest {
 
     System.out.println("Second test method");
   }
-
 }
