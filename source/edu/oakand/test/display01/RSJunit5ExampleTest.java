@@ -1,4 +1,4 @@
-import org.junit.jupiter.api;
+import org.junit.jupiter.api.*;
 
 @DisplayName("RSJunit5ExampleTest")
 class RsJunit5ExampleTest {
