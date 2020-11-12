@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.*;
 
-@DisplayName("RSJunit5ExampleTest")
+@DisplayName("RsJunit5ExampleTest")
 class RsJunit5ExampleTest {
 
   @BeforeAll
