@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.*;
 
 @DisplayName("RSJunit5ExampleTest")
-class Junit5ExampleTest {
+class RsJunit5ExampleTest {
 
   @BeforeAll
   static void beforeAll() {
