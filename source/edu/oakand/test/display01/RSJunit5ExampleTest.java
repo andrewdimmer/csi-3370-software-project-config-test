@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.*;
 
-@DisplayName("RsJunit5ExampleTest")
-class JUnit5ExampleTest {
+@DisplayName("RSJunit5ExampleTest")
+class Junit5ExampleTest {
 
   @BeforeAll
  static void beforeAll() {
@@ -9,29 +9,29 @@ class JUnit5ExampleTest {
  }
 
   @BeforeEach
- void beforeEach() {
+  void beforeEach() {
     System.out.println("Before each test method");
   }
 
- @AfterEach
- void afterEach() {
-  System.out.println("After each test method");
- }
+  @AfterEach
+  void afterEach() {
+    System.out.println("After each test method");
+  }
 
   @AfterAll
- static void afterAll() {
+  static void afterAll() {
     System.out.println("After all test methods");
   }
 	
   @Test
- @DisplayName("First test")
- void firstTest() {
+  @DisplayName("First test")
+  void firstTest() {
     System.out.println("First test method");
   }
 
   @Test
- @DisplayName("Second test")
- void secondTest() {
+  @DisplayName("Second test")
+  void secondTest() {
     System.out.println("Second test method");
   }
 }
