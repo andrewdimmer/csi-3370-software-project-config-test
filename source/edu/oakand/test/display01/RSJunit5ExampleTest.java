@@ -1,6 +1,6 @@
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api;
 
-@DisplayName("RsJunit5ExampleTest")
+@DisplayName("RSJunit5ExampleTest")
 class RsJunit5ExampleTest {
 
   @BeforeAll
@@ -22,7 +22,7 @@ class RsJunit5ExampleTest {
   static void afterAll() {
     System.out.println("After all test methods");
   }
-	
+
   @Test
   @DisplayName("First test")
   void firstTest() {
