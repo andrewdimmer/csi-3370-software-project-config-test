@@ -4,9 +4,9 @@ import org.junit.jupiter.api.*;
 class Junit5ExampleTest {
 
   @BeforeAll
- static void beforeAll() {
-  System.out.println("Before all test methods");
- }
+  static void beforeAll() {
+    System.out.println("Before all test methods");
+  }
 
   @BeforeEach
   void beforeEach() {
