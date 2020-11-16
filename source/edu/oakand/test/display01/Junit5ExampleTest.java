@@ -1,5 +1,3 @@
-package edu.oakland.test.display01;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.AfterAll;
@@ -9,8 +7,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("JUnit 5 Example")
-public class Junit5ExampleTest {
+@DisplayName("Junit5ExampleTest")
+class Junit5ExampleTest {
 
   @BeforeAll
   static void beforeAll() {
@@ -42,6 +40,5 @@ public class Junit5ExampleTest {
   @DisplayName("Second test")
   void secondTest() {
     System.out.println("Second test method");
-    assertEquals(1, 1);
   }
 }
