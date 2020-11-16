@@ -7,8 +7,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("RSJunit5ExampleTest")
-class RSJunit5ExampleTest {
+@DisplayName("RsJunit5ExampleTest")
+class RsJunit5ExampleTest {
 
   @BeforeAll
   static void beforeAll() {
