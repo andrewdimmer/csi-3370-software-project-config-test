@@ -5,8 +5,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Junit Practice")
-public class JunitPractice {
+@DisplayName("JUnit Practice")
+public class JUnitPractice {
 
   @BeforeAll
   static void beforeAll() {
