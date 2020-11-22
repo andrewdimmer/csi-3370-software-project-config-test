@@ -34,3 +34,8 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Generate SVG and PNG images for PlantUML diagrams
+      - name: Restart Google Style Guide Verification
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: Google Style Guide Verification
+          token: ${{ secrets.PERSONAL_TOKEN }}
