@@ -3,7 +3,7 @@
 !include test.puml
 
 class test2 {
-
+    ~ float var
 }
 
 @enduml
