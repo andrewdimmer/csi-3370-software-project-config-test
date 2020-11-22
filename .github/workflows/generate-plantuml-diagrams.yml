@@ -28,5 +28,9 @@ jobs:
         uses: cloudbees/plantuml-github-action@master
         with:
             args: -v -tpng ${{ steps.getfile.outputs.files }}
-      - name: Push Local Changes
-        run: git status; git add *; git status; git commit -m "Generate SVG and PNG images for PlantUML diagrams"; git push
+      - name: Stage Local Changes to Commit
+        run: git status; git add *; git status
+      - name: Commit PlantUML Diagrams
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Generate SVG and PNG images for PlantUML diagrams
