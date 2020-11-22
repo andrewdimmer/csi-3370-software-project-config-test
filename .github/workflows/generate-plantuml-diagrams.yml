@@ -33,7 +33,7 @@ jobs:
       - name: Commit PlantUML Diagrams
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Generate SVG and PNG images for PlantUML diagrams
+          commit_message: "Generate SVG and PNG images for PlantUML diagrams\n\nrequest-checks: true"
       - name: Restart Google Style Guide Verification
         uses: benc-uk/workflow-dispatch@v1
         with:
