@@ -35,8 +35,8 @@ jobs:
         with:
           commit_message: "Generate SVG and PNG images for PlantUML diagrams\n\nrequest-checks: true"
       - name: Restart Google Style Guide Verification
-        run: curl -X POST https://api.github.com/repos/andrewdimmer/csi-3370-software-project-config-test/check-runs?name=checkstyle&head_sha=6fc540b1704562def3b070404ba5ef2094feb618
-        #uses: benc-uk/workflow-dispatch@v1
-        #with:
-          #workflow: Google Style Guide Verification
-          #token: ${{ secrets.PERSONAL_TOKEN }}
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: Google Style Guide Verification
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          ref: ${{ github.event.pull_request.head.ref }}
