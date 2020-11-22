@@ -1,6 +1,7 @@
 @startuml test
 
 class Test {
+    - int myvar
     {static} + main(String[] args)
 }
 
