@@ -2,6 +2,7 @@
 
 class Test {
     - int myvar
+    - String myvar2
     {static} + main(String[] args)
 }
 
