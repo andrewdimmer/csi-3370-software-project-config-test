@@ -3,7 +3,6 @@
 class Test {
     - int myvar
     - String myvar2
-    - double myvar3
     {static} + main(String[] args)
 }
 
