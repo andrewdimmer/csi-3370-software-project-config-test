@@ -55,7 +55,7 @@ jobs:
           context: checkstyle
           state: 'success'
           sha: ${{git rev-parse HEAD}}
-          target_url: https://github.com/andrewdimmer/csi-3370-software-project-config-test/runs/${{GITHUB_RUN_ID}}
+          # target_url: https://github.com/andrewdimmer/csi-3370-software-project-config-test/runs/${{GITHUB_RUN_ID}}
       - name: Report Checkstyles Failure to Pull Request
         if: ${{ failure() }}
         uses: Sibz/github-status-action@v1
@@ -64,4 +64,4 @@ jobs:
           context: checkstyle
           state: 'failed'
           sha: ${{git rev-parse HEAD}}
-          target_url: https://github.com/andrewdimmer/csi-3370-software-project-config-test/runs/${{GITHUB_RUN_ID}}
+          # target_url: https://github.com/andrewdimmer/csi-3370-software-project-config-test/runs/${{GITHUB_RUN_ID}}
