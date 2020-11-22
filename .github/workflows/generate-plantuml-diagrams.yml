@@ -3,8 +3,6 @@ on:
   push:
     paths:
       - '**.puml'
-    branches:
-      - master
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -18,7 +16,7 @@ jobs:
       - name: Get changed UML files
         id: getfile
         run: |
-          echo "::set-output name=files::$(git diff-tree -r --no-commit-id --name-only ${{ github.sha }} | grep ${{ env.UML_FILES }} | xargs)"
+          echo "::set-output name=files::$(find | grep ${{ env.UML_FILES }} | xargs)"
       - name: UML files considered echo output
         run: |
           echo ${{ steps.getfile.outputs.files }}
@@ -30,5 +28,20 @@ jobs:
         uses: cloudbees/plantuml-github-action@master
         with:
             args: -v -tpng ${{ steps.getfile.outputs.files }}
-      - name: Push Local Changes
-        run: git status; git add *; git status; git commit -m "Generate SVG and PNG images for PlantUML diagrams"; git push
+      - name: Stage Local Changes to Commit
+        run: git status; git add *; git status
+      - name: Commit PlantUML Diagrams
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Generate SVG and PNG Images for PlantUML Diagrams
+  checkstyle:
+    runs-on: ubuntu-latest
+    needs: generate
+    steps:
+      - name: Checkout Source 
+        uses: actions/checkout@v2
+      - name: Restart Google Style Guide Verification
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: Google Style Guide Verification
+          token: ${{ secrets.PERSONAL_TOKEN }}
