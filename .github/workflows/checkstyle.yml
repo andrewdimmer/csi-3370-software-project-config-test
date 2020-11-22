@@ -1,6 +1,6 @@
 name: Google Style Guide Verification
 
-on: [push, workflow_dispatch]
+on: pull_request
 
 jobs:
   checkstyle_job:
