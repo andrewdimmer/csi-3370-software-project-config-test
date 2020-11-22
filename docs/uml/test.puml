@@ -3,6 +3,7 @@
 class Test {
     - int myvar
     - String myvar2
+    - String[] umlDiagramsToUpdate
     {static} + main(String[] args)
 }
 
