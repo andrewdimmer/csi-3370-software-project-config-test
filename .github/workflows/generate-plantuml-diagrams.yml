@@ -41,10 +41,12 @@ jobs:
       - name: Checkout Source 
         uses: actions/checkout@v2
       - name: Restart Google Style Guide Verification
-        uses: benc-uk/workflow-dispatch@v1
+        uses: nikitasavinov/checkstyle-action@master
         with:
-          workflow: Google Style Guide Verification
-          token: ${{ secrets.PERSONAL_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          checkstyle_config: 'google_checks.xml'
+          fail_on_error: true
+          tool_name: 'checkstyle'
       - name: Report Checkstyles Success to Pull Request
         if: ${{ success() }}
         uses: Sibz/github-status-action@v1
@@ -52,7 +54,7 @@ jobs:
           authToken: ${{secrets.GITHUB_TOKEN}}
           context: checkstyle
           state: 'success'
-          sha: ${{github.event.pull_request.head.sha || github.sha}}
+          sha: ${{github.sha}}
       - name: Report Checkstyles Failure to Pull Request
         if: ${{ failure() }}
         uses: Sibz/github-status-action@v1
@@ -60,4 +62,4 @@ jobs:
           authToken: ${{secrets.GITHUB_TOKEN}}
           context: checkstyle
           state: 'failed'
-          sha: ${{github.event.pull_request.head.sha || github.sha}}
+          sha: ${{github.sha}}
