@@ -40,7 +40,8 @@ jobs:
     steps:
       - name: Checkout Source 
         uses: actions/checkout@v2
-      - run: echo ::set-env name=NEW_SHA::$(git rev-parse HEAD)
+      - name: Save the Newest Commit's Hash
+        run: echo NEW_SHA=$(git rev-parse HEAD) >> $GITHUB_ENV
       - name: Restart Google Style Guide Verification
         uses: nikitasavinov/checkstyle-action@master
         with:
@@ -63,6 +64,6 @@ jobs:
         with: 
           authToken: ${{secrets.GITHUB_TOKEN}}
           context: checkstyle
-          state: 'failed'
+          state: 'failure'
           sha: ${{env.NEW_SHA}}
           target_url: https://github.com/andrewdimmer/csi-3370-software-project-config-test/runs/${{env.GITHUB_RUN_ID}}
