@@ -5,7 +5,6 @@ class Test {
     - String myvar2
     - String pleasePleaseFinallyWorkNow
     - boolean thisShouldWorkNow
-    - boolean areWeDoneYet
     {static} + main(String[] args)
 }
 
