@@ -40,12 +40,13 @@ jobs:
     steps:
       - name: Checkout Source 
         uses: actions/checkout@v2
+        with:
+          ref: ${{github.events.pull_request.head.sha}}
       - name: Pull Changes and Save the Newest Commit's Hash
         run:
-          curl https://api.github.com/repos/andrewdimmer/csi-3370-software-project-config-test/commits/$(git rev-parse HEAD)/check-runs | python3 .github/github_action_workflow_to_job_id.py "post-plantuml-checkstyle" > jobrunid.txt;
+          curl https://api.github.com/repos/andrewdimmer/csi-3370-software-project-config-test/commits/${{github.events.pull_request.head.sha}}/check-runs | python3 .github/github_action_workflow_to_job_id.py "post-plantuml-checkstyle" > jobrunid.txt;
           echo Job Run Id $(cat jobrunid.txt);
           echo JOB_RUN_ID=$(cat jobrunid.txt) >> $GITHUB_ENV;
-          git pull;
           echo New SHA $(git rev-parse HEAD);
           echo NEW_SHA=$(git rev-parse HEAD) >> $GITHUB_ENV;
       - name: Restart Google Style Guide Verification
