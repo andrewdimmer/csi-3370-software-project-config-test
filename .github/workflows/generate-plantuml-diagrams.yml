@@ -1,6 +1,6 @@
 name: Generate PlantUML Diagrams
 on:
-  pull_request:
+  push:
     paths:
       - '**.puml'
 jobs:
@@ -30,13 +30,13 @@ jobs:
             args: -v -tpng ${{ steps.getfile.outputs.files }}
       - name: Stage Local Changes to Commit
         run:
-          echo COMMIT=$(git status | grep "nothing to commit, working tree clean")
-          echo COMMIT=$(git status | grep "nothing to commit, working tree clean") >> $GITHUB_ENV
+          echo COMMIT=$(git status | grep "nothing to commit, working tree clean");
+          echo COMMIT=$(git status | grep "nothing to commit, working tree clean") >> $GITHUB_ENV;
           git status;
           git add *;
           git status;
       - name: Commit PlantUML Diagrams
-        if: ${{ !env.COMMIT }}
+        if: ${{ !env.COMMIT}}
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Generate SVG and PNG Images for PlantUML Diagrams
