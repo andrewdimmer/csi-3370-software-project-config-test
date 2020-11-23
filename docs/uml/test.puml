@@ -4,6 +4,7 @@ class Test {
     - int myvar
     - String myvar2
     - String pleasePleaseFinallyWorkNow
+    - boolean thisShouldWorkNow
     {static} + main(String[] args)
 }
 
