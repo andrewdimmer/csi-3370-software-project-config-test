@@ -34,7 +34,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Generate SVG and PNG Images for PlantUML Diagrams
-  checkstyle:
+  post-plantuml-checkstyle:
     runs-on: ubuntu-latest
     needs: generate
     steps:
@@ -43,7 +43,11 @@ jobs:
         with:
           ref: ${{github.event.pull_request.head.ref}}
       - name: Pull Changes and Save the Newest Commit's Hash
-        run: echo Job Run Id ${{github.run_id}} ; echo New SHA $(git rev-parse HEAD); echo NEW_SHA=$(git rev-parse HEAD) >> $GITHUB_ENV
+        run:
+          echo JOB_RUN_ID=$(curl https://api.github.com/repos/andrewdimmer/csi-3370-software-project-config-test/commits/${{github.events.pull_request.head.sha}}/check-runs \
+          | python3 .github/github_action_workflow_to_job_id.py "post-plantuml-checkstyle") >> $GITHUB_ENV
+          echo New SHA $(git rev-parse HEAD)
+          echo NEW_SHA=$(git rev-parse HEAD) >> $GITHUB_ENV
       - name: Restart Google Style Guide Verification
         uses: nikitasavinov/checkstyle-action@master
         with:
@@ -59,7 +63,7 @@ jobs:
           context: checkstyle
           state: 'success'
           sha: ${{env.NEW_SHA}}
-          target_url: https://github.com/andrewdimmer/csi-3370-software-project-config-test/runs/${{github.run_id}}
+          target_url: https://github.com/andrewdimmer/csi-3370-software-project-config-test/runs/${{env.JOB_RUN_ID}}
       - name: Report Checkstyles Failure to Pull Request
         if: ${{ failure() }}
         uses: Sibz/github-status-action@v1
@@ -68,4 +72,4 @@ jobs:
           context: checkstyle
           state: 'failure'
           sha: ${{env.NEW_SHA}}
-          target_url: https://github.com/andrewdimmer/csi-3370-software-project-config-test/runs/${{github.run_id}}
+          target_url: https://github.com/andrewdimmer/csi-3370-software-project-config-test/runs/${{env.JOB_RUN_ID}}
