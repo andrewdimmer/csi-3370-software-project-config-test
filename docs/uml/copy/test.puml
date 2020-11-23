@@ -1,0 +1,10 @@
+@startuml test
+
+class Test {
+    - int myvar
+    - String myvar2
+    - int workNow
+    {static} + main(String[] args)
+}
+
+@enduml
