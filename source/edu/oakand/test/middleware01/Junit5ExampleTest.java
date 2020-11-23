@@ -10,7 +10,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("JUnit 5 Example")
- public class Junit5ExampleTest {
+public class Junit5ExampleTest {
 
   @BeforeAll
   static void beforeAll() {
