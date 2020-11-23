@@ -3,7 +3,6 @@
 class Test {
     - int myvar
     - String myvar2
-    - boolean isWorkingPlease
     {static} + main(String[] args)
 }
 
