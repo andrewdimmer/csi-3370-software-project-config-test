@@ -40,8 +40,8 @@ jobs:
     steps:
       - name: Checkout Source 
         uses: actions/checkout@v2
-      - name: Save the Newest Commit's Hash
-        run: echo Job Run Id ${{env.GITHUB_RUN_ID}} ; echo New SHA $(git rev-parse HEAD); echo NEW_SHA=$(git rev-parse HEAD) >> $GITHUB_ENV
+      - name: Pull Changes and Save the Newest Commit's Hash
+        run: git pull; echo Job Run Id ${{github.job}} ; echo New SHA $(git rev-parse HEAD); echo NEW_SHA=$(git rev-parse HEAD) >> $GITHUB_ENV
       - name: Restart Google Style Guide Verification
         uses: nikitasavinov/checkstyle-action@master
         with:
@@ -57,7 +57,7 @@ jobs:
           context: checkstyle
           state: 'success'
           sha: ${{env.NEW_SHA}}
-          target_url: https://github.com/andrewdimmer/csi-3370-software-project-config-test/runs/${{env.GITHUB_RUN_ID}}
+          target_url: https://github.com/andrewdimmer/csi-3370-software-project-config-test/runs/${{github.job}}
       - name: Report Checkstyles Failure to Pull Request
         if: ${{ failure() }}
         uses: Sibz/github-status-action@v1
@@ -66,4 +66,4 @@ jobs:
           context: checkstyle
           state: 'failure'
           sha: ${{env.NEW_SHA}}
-          target_url: https://github.com/andrewdimmer/csi-3370-software-project-config-test/runs/${{env.GITHUB_RUN_ID}}
+          target_url: https://github.com/andrewdimmer/csi-3370-software-project-config-test/runs/${{github.job}}
