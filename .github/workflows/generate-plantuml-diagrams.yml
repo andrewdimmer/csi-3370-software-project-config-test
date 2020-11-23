@@ -42,7 +42,7 @@ jobs:
           commit_message: Generate SVG and PNG Images for PlantUML Diagrams
       - name: Get the checkstyle Results to Propagate
         run:
-          curl https://api.github.com/repos/andrewdimmer/csi-3370-software-project-config-test/commits/$(git rev-parse HEAD~1)/check-runs > check_runs.json
+          curl https://api.github.com/repos/andrewdimmer/csi-3370-software-project-config-test/commits/$(git rev-parse HEAD~1)/check-runs > check_runs.json;
           cat check_runs.json | python3 .github/github_action_workflow_to_job_id.py "checkstyle" "id" > checkstyle_job_run_id.txt;
           echo checkstyle Job Run Id $(cat checkstyle_job_run_id.txt);
           echo CHECKSTYLE_JOB_RUN_ID=$(cat checkstyle_job_run_id.txt) >> $GITHUB_ENV;
