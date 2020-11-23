@@ -42,7 +42,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Pull Changes and Save the Newest Commit's Hash
         run:
-          echo ${{github}}
+          echo ${{github}};
           curl https://api.github.com/repos/andrewdimmer/csi-3370-software-project-config-test/commits/$(git rev-parse HEAD)/check-runs | python3 .github/github_action_workflow_to_job_id.py "post-plantuml-checkstyle" > jobrunid.txt;
           echo Job Run Id $(cat jobrunid.txt);
           echo JOB_RUN_ID=$(cat jobrunid.txt) >> $GITHUB_ENV;
