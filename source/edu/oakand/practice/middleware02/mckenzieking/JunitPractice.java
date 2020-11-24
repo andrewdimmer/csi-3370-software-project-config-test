@@ -9,8 +9,8 @@ import org.junit.jupiter.api.Test;
 public class JunitPractice {
 
   @BeforeAll
-   static void beforeAll() {
-    System.out.println("Before all test methods")
+  static void beforeAll() {
+    System.out.println("Before all test methods");
   }
 
   @BeforeEach
