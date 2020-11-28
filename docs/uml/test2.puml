@@ -1,0 +1,10 @@
+@startuml test2
+
+!include test.puml
+
+class test2 {
+    ~ float var
+    - String name
+}
+
+@enduml
